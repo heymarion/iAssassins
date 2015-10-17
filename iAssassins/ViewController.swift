@@ -16,10 +16,12 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
+            print("logged in")
             // User is already logged in, do work such as go to next view controller.
         }
         else
         {
+            print("not logged in")
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             self.view.addSubview(loginView)
             loginView.center = self.view.center
@@ -34,23 +36,38 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwindToViewOtherController(segue:UIStoryboardSegue) {
+    }
+    
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("User Logged In")
+        //let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("createJoin")
+        
+        //self.showViewController(vc as! UIViewController, sender: vc)
+        
+        performSegueWithIdentifier("segue1", sender: nil)
+                    print("end")
         
         if ((error) != nil)
         {
+            
             // Process error
         }
         else if result.isCancelled {
+            
             // Handle cancellations
         }
         else {
             // If you ask for multiple permissions at once, you
             // should check if specific permissions missing
-            if result.grantedPermissions.contains("email")
-            {
+            //if result.grantedPermissions.contains("email")
+            //{
                 // Do work
-            }
+            //}
+            
+
+            //performSegueWithIdentifier("unwindToViewOtherController", sender: self)
+            
         }
     }
     
@@ -77,6 +94,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 let lastName : NSString = result.valueForKey("last_name") as! NSString
                 print("User first name is: \(firstName)")
                 let firstAndLastName =  (firstName as String) + (lastName as String);
+                
             }
         })
     }
