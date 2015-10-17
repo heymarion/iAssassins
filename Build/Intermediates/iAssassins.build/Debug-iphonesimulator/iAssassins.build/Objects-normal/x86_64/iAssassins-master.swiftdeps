@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "5826c98ee5b5ec22cd8ae42cd79bc201"
+build_time: [498394967, 78748000]
+inputs: 
+	"/Users/vinh/Desktop/iAssassins/iAssassins/AppDelegate.swift": [498394953, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/ViewController.swift": [498392842, 0]
