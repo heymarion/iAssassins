@@ -1,8 +1,8 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
 options: "5826c98ee5b5ec22cd8ae42cd79bc201"
-build_time: [498409071, 519857000]
+build_time: [498409915, 562534000]
 inputs: 
-	"/Users/vinh/Desktop/iAssassins/iAssassins/TargetViewController.swift": [9223372036854775807, 0]
-	"/Users/vinh/Desktop/iAssassins/iAssassins/AppDelegate.swift": [498409036, 0]
 	"/Users/vinh/Desktop/iAssassins/iAssassins/CreateJoinViewController.swift": [9223372036854775807, 0]
-	"/Users/vinh/Desktop/iAssassins/iAssassins/ViewController.swift": [498409068, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/AppDelegate.swift": [498401798, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/ViewController.swift": [498401798, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/TargetViewController.swift": [9223372036854775807, 0]

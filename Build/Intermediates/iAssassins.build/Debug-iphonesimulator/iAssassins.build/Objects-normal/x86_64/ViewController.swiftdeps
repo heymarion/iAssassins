@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C10iAssassins14ViewController", ""]
 provides-dynamic-lookup:
-- "returnUserData"
-- "loginButtonDidLogOut"
 - "unwindToViewOtherController"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "loginButtonDidLogOut"
+- "returnUserData"
 - "loginButton"
 depends-top-level:
+- !private "StringLiteralType"
+- !private "Array"
+- !private "FBSDKAccessToken"
 - "UIViewController"
 - "ViewController"
-- !private "NSString"
-- !private "StringLiteralType"
-- !private "FBSDKAccessToken"
-- !private "Void"
-- !private "String"
-- "FBSDKLoginManagerLoginResult"
 - !private "+"
-- !private "print"
+- !private "Void"
 - "UIStoryboardSegue"
-- "NSError"
+- !private "NSString"
 - "FBSDKLoginButton"
-- !private "FBSDKGraphRequest"
+- !private "String"
 - "FBSDKLoginButtonDelegate"
-- !private "Array"
 - !private "!="
+- "FBSDKLoginManagerLoginResult"
+- !private "FBSDKGraphRequest"
+- !private "print"
+- "NSError"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]

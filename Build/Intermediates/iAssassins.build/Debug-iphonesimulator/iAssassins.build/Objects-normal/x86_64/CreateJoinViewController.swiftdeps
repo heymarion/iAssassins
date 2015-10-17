@@ -7,12 +7,12 @@ provides-member:
 - ["C10iAssassins24CreateJoinViewController", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "logo"
+- "viewDidLoad"
 depends-top-level:
-- "CreateJoinViewController"
 - "UIImageView"
 - "UIViewController"
+- "CreateJoinViewController"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]

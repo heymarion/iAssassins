@@ -6,25 +6,24 @@ provides-nominal:
 provides-member:
 - ["C10iAssassins11AppDelegate", ""]
 provides-dynamic-lookup:
+- "window"
+- "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
+- "applicationWillTerminate"
+- "applicationWillResignActive"
 - "application"
-- "application"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "UIResponder"
 - "UIApplication"
-- "String"
+- "UIWindow"
+- !private "BooleanLiteralType"
+- "UIApplicationDelegate"
+- "AnyObject"
+- "UIResponder"
+- "AppDelegate"
 - "Bool"
 - "NSObject"
-- "AnyObject"
-- "AppDelegate"
-- "NSURL"
-- !private "FBSDKAppEvents"
-- "UIApplicationDelegate"
-- !private "FBSDKApplicationDelegate"
 depends-member:
-- !private ["PSs9AnyObject", "FBSDKAppEvents"]
-- !private ["PSs9AnyObject", "FBSDKApplicationDelegate"]
-- !private ["PSs9AnyObject", "activateApp"]
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]
 - ["PSs9AnyObject", "applicationDidEnterBackground"]
@@ -38,17 +37,13 @@ depends-member:
 - ["PSs9AnyObject", "applicationWillResignActive"]
 - ["PSs9AnyObject", "applicationWillTerminate"]
 - ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "sharedInstance"]
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
 - ["C10iAssassins11AppDelegate", "AnyObject"]
 - ["C10iAssassins11AppDelegate", "Bool"]
-- !private ["C10iAssassins11AppDelegate", "FBSDKAppEvents"]
-- !private ["C10iAssassins11AppDelegate", "FBSDKApplicationDelegate"]
 - ["C10iAssassins11AppDelegate", "NSObject"]
-- ["C10iAssassins11AppDelegate", "NSURL"]
-- ["C10iAssassins11AppDelegate", "String"]
 - ["C10iAssassins11AppDelegate", "UIApplication"]
+- ["C10iAssassins11AppDelegate", "UIWindow"]
 - ["C10iAssassins11AppDelegate", "application"]
 - ["C10iAssassins11AppDelegate", "applicationDidBecomeActive"]
 - ["C10iAssassins11AppDelegate", "applicationDidEnterBackground"]
@@ -64,9 +59,6 @@ depends-member:
 - ["C10iAssassins11AppDelegate", "deinit"]
 - ["C10iAssassins11AppDelegate", "init"]
 - ["C10iAssassins11AppDelegate", "window"]
-- !private ["PSs11CVarArgType", "FBSDKAppEvents"]
-- !private ["PSs11CVarArgType", "FBSDKApplicationDelegate"]
-- !private ["PSs11CVarArgType", "activateApp"]
 - ["PSs11CVarArgType", "application"]
 - ["PSs11CVarArgType", "applicationDidBecomeActive"]
 - ["PSs11CVarArgType", "applicationDidEnterBackground"]
@@ -80,12 +72,8 @@ depends-member:
 - ["PSs11CVarArgType", "applicationWillResignActive"]
 - ["PSs11CVarArgType", "applicationWillTerminate"]
 - ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "sharedInstance"]
 - ["PSs11CVarArgType", "window"]
 - ["PSs11CVarArgType", ""]
-- !private ["PSs23CustomStringConvertible", "FBSDKAppEvents"]
-- !private ["PSs23CustomStringConvertible", "FBSDKApplicationDelegate"]
-- !private ["PSs23CustomStringConvertible", "activateApp"]
 - ["PSs23CustomStringConvertible", "application"]
 - ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -99,12 +87,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "applicationWillResignActive"]
 - ["PSs23CustomStringConvertible", "applicationWillTerminate"]
 - ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "sharedInstance"]
 - ["PSs23CustomStringConvertible", "window"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "FBSDKAppEvents"]
-- !private ["PSs9Equatable", "FBSDKApplicationDelegate"]
-- !private ["PSs9Equatable", "activateApp"]
 - ["PSs9Equatable", "application"]
 - ["PSs9Equatable", "applicationDidBecomeActive"]
 - ["PSs9Equatable", "applicationDidEnterBackground"]
@@ -118,15 +102,8 @@ depends-member:
 - ["PSs9Equatable", "applicationWillResignActive"]
 - ["PSs9Equatable", "applicationWillTerminate"]
 - ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "sharedInstance"]
 - ["PSs9Equatable", "window"]
 - ["PSs9Equatable", ""]
-- !private ["CSo14FBSDKAppEvents", "activateApp"]
-- !private ["CSo24FBSDKApplicationDelegate", "application"]
-- !private ["CSo24FBSDKApplicationDelegate", "sharedInstance"]
-- !private ["PSs8Hashable", "FBSDKAppEvents"]
-- !private ["PSs8Hashable", "FBSDKApplicationDelegate"]
-- !private ["PSs8Hashable", "activateApp"]
 - ["PSs8Hashable", "application"]
 - ["PSs8Hashable", "applicationDidBecomeActive"]
 - ["PSs8Hashable", "applicationDidEnterBackground"]
@@ -140,18 +117,13 @@ depends-member:
 - ["PSs8Hashable", "applicationWillResignActive"]
 - ["PSs8Hashable", "applicationWillTerminate"]
 - ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "sharedInstance"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "FBSDKAppEvents"]
-- !private ["CSo8NSObject", "FBSDKApplicationDelegate"]
 - ["CSo8NSObject", "NSObject"]
-- ["CSo8NSObject", "NSURL"]
-- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
-- !private ["CSo8NSObject", "activateApp"]
+- ["CSo8NSObject", "UIWindow"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -165,11 +137,7 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "sharedInstance"]
 - ["CSo8NSObject", "window"]
-- !private ["PSo16NSObjectProtocol", "FBSDKAppEvents"]
-- !private ["PSo16NSObjectProtocol", "FBSDKApplicationDelegate"]
-- !private ["PSo16NSObjectProtocol", "activateApp"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -183,11 +151,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo21UIApplicationDelegate", "FBSDKAppEvents"]
-- !private ["PSo21UIApplicationDelegate", "FBSDKApplicationDelegate"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -204,12 +169,9 @@ depends-member:
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "FBSDKAppEvents"]
-- !private ["CSo11UIResponder", "FBSDKApplicationDelegate"]
 - ["CSo11UIResponder", "NSObject"]
-- ["CSo11UIResponder", "NSURL"]
-- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -231,8 +193,6 @@ depends-nominal:
 - "PSs11CVarArgType"
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
-- !private "CSo14FBSDKAppEvents"
-- !private "CSo24FBSDKApplicationDelegate"
 - "PSs8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -278,4 +238,4 @@ depends-external:
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "d534d2690803ecfe27936d3ec790b1c2"
+interface-hash: "95ac5e14a17ce6003db610d2e51ecc55"
