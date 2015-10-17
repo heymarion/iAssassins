@@ -17,6 +17,7 @@
 		B61284F61BD23871003DBC67 /* iAssassinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61284F51BD23871003DBC67 /* iAssassinsTests.swift */; };
 		B61285011BD23871003DBC67 /* iAssassinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61285001BD23871003DBC67 /* iAssassinsUITests.swift */; };
 		B61285151BD26ADC003DBC67 /* CreateJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61285141BD26ADC003DBC67 /* CreateJoinViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B61285171BD27C66003DBC67 /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61285161BD27C66003DBC67 /* TargetViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B61285001BD23871003DBC67 /* iAssassinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAssassinsUITests.swift; sourceTree = "<group>"; };
 		B61285021BD23871003DBC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61285141BD26ADC003DBC67 /* CreateJoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateJoinViewController.swift; sourceTree = "<group>"; };
+		B61285161BD27C66003DBC67 /* TargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B61284E21BD23870003DBC67 /* ViewController.swift */,
 				B61284E41BD23870003DBC67 /* Main.storyboard */,
 				B61285141BD26ADC003DBC67 /* CreateJoinViewController.swift */,
+				B61285161BD27C66003DBC67 /* TargetViewController.swift */,
 				B61284E71BD23870003DBC67 /* Assets.xcassets */,
 				B61284E91BD23870003DBC67 /* LaunchScreen.storyboard */,
 				B61284EC1BD23870003DBC67 /* Info.plist */,
@@ -272,6 +275,7 @@
 				B61285151BD26ADC003DBC67 /* CreateJoinViewController.swift in Sources */,
 				B61284E31BD23870003DBC67 /* ViewController.swift in Sources */,
 				B61284E11BD23870003DBC67 /* AppDelegate.swift in Sources */,
+				B61285171BD27C66003DBC67 /* TargetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
