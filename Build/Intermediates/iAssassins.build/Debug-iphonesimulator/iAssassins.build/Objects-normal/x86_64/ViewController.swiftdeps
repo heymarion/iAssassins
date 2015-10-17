@@ -9,23 +9,25 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "loginButtonDidLogOut"
 - "returnUserData"
-- "loginButton"
 - "viewDidLoad"
+- "loginButton"
 depends-top-level:
-- "NSError"
-- !private "Void"
-- "FBSDKLoginButtonDelegate"
 - !private "Array"
-- !private "!="
-- "UIViewController"
-- "ViewController"
+- "FBSDKLoginButtonDelegate"
 - "FBSDKLoginManagerLoginResult"
-- !private "FBSDKGraphRequest"
-- "FBSDKLoginButton"
-- !private "NSString"
-- !private "FBSDKAccessToken"
+- !private "!="
 - !private "print"
 - !private "StringLiteralType"
+- "FBSDKLoginButton"
+- !private "FBSDKAccessToken"
+- "ViewController"
+- !private "+"
+- "UIViewController"
+- !private "String"
+- !private "Void"
+- !private "NSString"
+- "NSError"
+- !private "FBSDKGraphRequest"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -243,6 +245,7 @@ depends-member:
 - ["CSo8NSObject", "FBSDKLoginManagerLoginResult"]
 - ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "center"]
@@ -365,6 +368,7 @@ depends-member:
 - ["CSo11UIResponder", "FBSDKLoginManagerLoginResult"]
 - ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSString"]
+- !private ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "center"]
@@ -420,6 +424,7 @@ depends-member:
 - ["CSo16UIViewController", "FBSDKLoginManagerLoginResult"]
 - ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "NSString"]
+- !private ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
@@ -444,6 +449,7 @@ depends-member:
 - ["C10iAssassins14ViewController", "FBSDKLoginManagerLoginResult"]
 - ["C10iAssassins14ViewController", "NSError"]
 - !private ["C10iAssassins14ViewController", "NSString"]
+- !private ["C10iAssassins14ViewController", "String"]
 - !private ["C10iAssassins14ViewController", "Void"]
 - ["C10iAssassins14ViewController", "deinit"]
 - ["C10iAssassins14ViewController", "didReceiveMemoryWarning"]
