@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C10iAssassins24CreateJoinViewController", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
 - "didReceiveMemoryWarning"
 - "logo"
-- "viewDidLoad"
 depends-top-level:
-- "UIImageView"
-- "UIViewController"
 - "CreateJoinViewController"
+- "UIViewController"
+- "UIImageView"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]
