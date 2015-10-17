@@ -74,7 +74,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 let id : NSString = result.valueForKey("id") as! NSString
                 print("User id is: \(id)")
                 let firstName : NSString = result.valueForKey("first_name") as! NSString
+                let lastName : NSString = result.valueForKey("last_name") as! NSString
                 print("User first name is: \(firstName)")
+                let firstAndLastName =  (firstName as String) + (lastName as String);
             }
         })
     }
