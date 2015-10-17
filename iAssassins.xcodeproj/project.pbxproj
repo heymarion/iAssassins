@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3FE70D21BD23E8B008F4FD3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FE70D11BD23E8B008F4FD3 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		B61284E11BD23870003DBC67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61284E01BD23870003DBC67 /* AppDelegate.swift */; };
 		B61284E31BD23870003DBC67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61284E21BD23870003DBC67 /* ViewController.swift */; };
 		B61284E61BD23870003DBC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61284E41BD23870003DBC67 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3FE70D11BD23E8B008F4FD3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A3FE70D31BD240A7008F4FD3 /* iAssassin-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iAssassin-header.h"; sourceTree = "<group>"; };
 		B61284DD1BD23870003DBC67 /* iAssassins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAssassins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61284E01BD23870003DBC67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61284E21BD23870003DBC67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FE70D21BD23E8B008F4FD3 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +81,12 @@
 		B61284D41BD23870003DBC67 = {
 			isa = PBXGroup;
 			children = (
+				A3FE70D31BD240A7008F4FD3 /* iAssassin-header.h */,
 				B61284DF1BD23870003DBC67 /* iAssassins */,
 				B61284F41BD23871003DBC67 /* iAssassinsTests */,
 				B61284FF1BD23871003DBC67 /* iAssassinsUITests */,
 				B61284DE1BD23870003DBC67 /* Products */,
+				A3FE70D11BD23E8B008F4FD3 /* FBSDKLoginKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -481,6 +487,7 @@
 				B61285071BD23871003DBC67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B61285081BD23871003DBC67 /* Build configuration list for PBXNativeTarget "iAssassinsTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +496,7 @@
 				B612850A1BD23871003DBC67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B612850B1BD23871003DBC67 /* Build configuration list for PBXNativeTarget "iAssassinsUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +505,7 @@
 				B612850D1BD23871003DBC67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
