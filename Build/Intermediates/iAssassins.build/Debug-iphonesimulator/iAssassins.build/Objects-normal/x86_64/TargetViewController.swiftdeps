@@ -1,0 +1,134 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TargetViewController"
+provides-nominal:
+- "C10iAssassins20TargetViewController"
+provides-member:
+- ["C10iAssassins20TargetViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- "UIViewController"
+- "TargetViewController"
+depends-member:
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C10iAssassins20TargetViewController", "deinit"]
+- ["C10iAssassins20TargetViewController", "didReceiveMemoryWarning"]
+- ["C10iAssassins20TargetViewController", "init"]
+- ["C10iAssassins20TargetViewController", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C10iAssassins20TargetViewController"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Bridging-header.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "4c900cb0118c65291c549853bb6f2d39"

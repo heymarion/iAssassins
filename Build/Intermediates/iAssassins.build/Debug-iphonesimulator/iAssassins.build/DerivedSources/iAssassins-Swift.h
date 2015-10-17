@@ -92,32 +92,50 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class UIWindow;
 @class UIApplication;
 @class NSObject;
+@class NSURL;
 
 SWIFT_CLASS("_TtC10iAssassins11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (nonatomic) UIWindow * __nullable window;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
-- (void)applicationWillResignActive:(UIApplication * __nonnull)application;
-- (void)applicationDidEnterBackground:(UIApplication * __nonnull)application;
-- (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
-- (void)applicationWillTerminate:(UIApplication * __nonnull)application;
+- (BOOL)application:(UIApplication * __nonnull)application openURL:(NSURL * __nonnull)url sourceApplication:(NSString * __nullable)sourceApplication annotation:(id __nonnull)annotation;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10iAssassins24CreateJoinViewController")
+@interface CreateJoinViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified logo;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10iAssassins20TargetViewController")
+@interface TargetViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIStoryboardSegue;
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
 @class NSError;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10iAssassins14ViewController")
 @interface ViewController : UIViewController <FBSDKLoginButtonDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)unwindToViewOtherController:(UIStoryboardSegue * __nonnull)segue;
 - (void)loginButton:(FBSDKLoginButton * __null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * __null_unspecified)result error:(NSError * __null_unspecified)error;
 - (void)loginButtonDidLogOut:(FBSDKLoginButton * __null_unspecified)loginButton;
 - (void)returnUserData;
