@@ -5,25 +5,43 @@ provides-nominal:
 - "C10iAssassins11AppDelegate"
 provides-member:
 - ["C10iAssassins11AppDelegate", ""]
+- ["C10iAssassins11AppDelegate", "sendLocalNotificationWithMessage"]
+- ["C10iAssassins11AppDelegate", "locationManager"]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
+- "locationManager"
+- "locationManager"
+- "sendLocalNotificationWithMessage"
 - "application"
-- "applicationDidEnterBackground"
-- "applicationWillTerminate"
-- "applicationWillEnterForeground"
 - "window"
-- "applicationDidBecomeActive"
 depends-top-level:
+- !private "UILocalNotification"
+- "CLBeaconRegion"
+- !private ">"
+- !private "StringLiteralType"
 - "NSObject"
+- "String"
+- "CLLocationManager"
 - "AppDelegate"
-- "UIApplication"
-- "Bool"
-- "UIResponder"
-- !private "BooleanLiteralType"
-- "UIWindow"
 - "AnyObject"
+- "Bool"
+- "CLLocationManagerDelegate"
 - "UIApplicationDelegate"
+- !private "NSLog"
+- "UIResponder"
+- "UIApplication"
+- !private "NSUUID"
+- "UIWindow"
+- !private "BooleanLiteralType"
+- !private "CLProximity"
+- "CLBeacon"
 depends-member:
+- !private ["PSs9AnyObject", "CLBeaconRegion"]
+- !private ["PSs9AnyObject", "CLLocationManager"]
+- !private ["PSs9AnyObject", "NSLog"]
+- !private ["PSs9AnyObject", "NSUUID"]
+- !private ["PSs9AnyObject", "UIApplication"]
+- !private ["PSs9AnyObject", "UILocalNotification"]
+- !private ["PSs9AnyObject", "alertBody"]
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]
 - ["PSs9AnyObject", "applicationDidEnterBackground"]
@@ -36,13 +54,36 @@ depends-member:
 - ["PSs9AnyObject", "applicationWillEnterForeground"]
 - ["PSs9AnyObject", "applicationWillResignActive"]
 - ["PSs9AnyObject", "applicationWillTerminate"]
+- !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "locationManager"]
+- ["PSs9AnyObject", "locationManagerDidPauseLocationUpdates"]
+- ["PSs9AnyObject", "locationManagerDidResumeLocationUpdates"]
+- ["PSs9AnyObject", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs9AnyObject", "pausesLocationUpdatesAutomatically"]
+- !private ["PSs9AnyObject", "proximity"]
+- !private ["PSs9AnyObject", "requestAlwaysAuthorization"]
+- !private ["PSs9AnyObject", "respondsToSelector"]
+- !private ["PSs9AnyObject", "scheduleLocalNotification"]
+- ["PSs9AnyObject", "sendLocalNotificationWithMessage"]
+- !private ["PSs9AnyObject", "sharedApplication"]
+- !private ["PSs9AnyObject", "startMonitoringForRegion"]
+- !private ["PSs9AnyObject", "startRangingBeaconsInRegion"]
+- !private ["PSs9AnyObject", "startUpdatingLocation"]
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
 - ["C10iAssassins11AppDelegate", "AnyObject"]
 - ["C10iAssassins11AppDelegate", "Bool"]
+- ["C10iAssassins11AppDelegate", "CLBeacon"]
+- ["C10iAssassins11AppDelegate", "CLBeaconRegion"]
+- ["C10iAssassins11AppDelegate", "CLLocationManager"]
+- !private ["C10iAssassins11AppDelegate", "CLProximity"]
+- !private ["C10iAssassins11AppDelegate", "NSLog"]
 - ["C10iAssassins11AppDelegate", "NSObject"]
+- !private ["C10iAssassins11AppDelegate", "NSUUID"]
+- ["C10iAssassins11AppDelegate", "String"]
 - ["C10iAssassins11AppDelegate", "UIApplication"]
+- !private ["C10iAssassins11AppDelegate", "UILocalNotification"]
 - ["C10iAssassins11AppDelegate", "UIWindow"]
 - ["C10iAssassins11AppDelegate", "application"]
 - ["C10iAssassins11AppDelegate", "applicationDidBecomeActive"]
@@ -58,7 +99,81 @@ depends-member:
 - ["C10iAssassins11AppDelegate", "applicationWillTerminate"]
 - ["C10iAssassins11AppDelegate", "deinit"]
 - ["C10iAssassins11AppDelegate", "init"]
+- ["C10iAssassins11AppDelegate", "locationManager"]
+- ["C10iAssassins11AppDelegate", "locationManagerDidPauseLocationUpdates"]
+- ["C10iAssassins11AppDelegate", "locationManagerDidResumeLocationUpdates"]
+- ["C10iAssassins11AppDelegate", "locationManagerShouldDisplayHeadingCalibration"]
+- ["C10iAssassins11AppDelegate", "sendLocalNotificationWithMessage"]
 - ["C10iAssassins11AppDelegate", "window"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo8CLBeacon", "proximity"]
+- !private ["CSo14CLBeaconRegion", "init"]
+- !private ["CSo17CLLocationManager", "delegate"]
+- !private ["CSo17CLLocationManager", "init"]
+- !private ["CSo17CLLocationManager", "pausesLocationUpdatesAutomatically"]
+- !private ["CSo17CLLocationManager", "requestAlwaysAuthorization"]
+- !private ["CSo17CLLocationManager", "respondsToSelector"]
+- !private ["CSo17CLLocationManager", "startMonitoringForRegion"]
+- !private ["CSo17CLLocationManager", "startRangingBeaconsInRegion"]
+- !private ["CSo17CLLocationManager", "startUpdatingLocation"]
+- !private ["PSo25CLLocationManagerDelegate", "CLBeaconRegion"]
+- !private ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
+- !private ["PSo25CLLocationManagerDelegate", "NSLog"]
+- !private ["PSo25CLLocationManagerDelegate", "NSUUID"]
+- !private ["PSo25CLLocationManagerDelegate", "UIApplication"]
+- !private ["PSo25CLLocationManagerDelegate", "UILocalNotification"]
+- ["PSo25CLLocationManagerDelegate", "application"]
+- ["PSo25CLLocationManagerDelegate", "applicationDidBecomeActive"]
+- ["PSo25CLLocationManagerDelegate", "applicationDidEnterBackground"]
+- ["PSo25CLLocationManagerDelegate", "applicationDidFinishLaunching"]
+- ["PSo25CLLocationManagerDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo25CLLocationManagerDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo25CLLocationManagerDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo25CLLocationManagerDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo25CLLocationManagerDelegate", "applicationSignificantTimeChange"]
+- ["PSo25CLLocationManagerDelegate", "applicationWillEnterForeground"]
+- ["PSo25CLLocationManagerDelegate", "applicationWillResignActive"]
+- ["PSo25CLLocationManagerDelegate", "applicationWillTerminate"]
+- ["PSo25CLLocationManagerDelegate", "locationManager"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSo25CLLocationManagerDelegate", "sendLocalNotificationWithMessage"]
+- ["PSo25CLLocationManagerDelegate", "window"]
+- ["PSo25CLLocationManagerDelegate", ""]
+- ["OSC11CLProximity", "Far"]
+- ["OSC11CLProximity", "Immediate"]
+- ["OSC11CLProximity", "Near"]
+- ["OSC11CLProximity", "Unknown"]
+- !private ["CSo8CLRegion", "init"]
+- !private ["PSs11CVarArgType", "CLBeaconRegion"]
+- !private ["PSs11CVarArgType", "CLLocationManager"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSLog"]
+- !private ["PSs11CVarArgType", "NSUUID"]
+- !private ["PSs11CVarArgType", "UIApplication"]
+- !private ["PSs11CVarArgType", "UILocalNotification"]
+- !private ["PSs11CVarArgType", "alertBody"]
 - ["PSs11CVarArgType", "application"]
 - ["PSs11CVarArgType", "applicationDidBecomeActive"]
 - ["PSs11CVarArgType", "applicationDidEnterBackground"]
@@ -71,9 +186,50 @@ depends-member:
 - ["PSs11CVarArgType", "applicationWillEnterForeground"]
 - ["PSs11CVarArgType", "applicationWillResignActive"]
 - ["PSs11CVarArgType", "applicationWillTerminate"]
+- !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "locationManager"]
+- ["PSs11CVarArgType", "locationManagerDidPauseLocationUpdates"]
+- ["PSs11CVarArgType", "locationManagerDidResumeLocationUpdates"]
+- ["PSs11CVarArgType", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs11CVarArgType", "pausesLocationUpdatesAutomatically"]
+- !private ["PSs11CVarArgType", "proximity"]
+- !private ["PSs11CVarArgType", "requestAlwaysAuthorization"]
+- !private ["PSs11CVarArgType", "respondsToSelector"]
+- !private ["PSs11CVarArgType", "scheduleLocalNotification"]
+- ["PSs11CVarArgType", "sendLocalNotificationWithMessage"]
+- !private ["PSs11CVarArgType", "sharedApplication"]
+- !private ["PSs11CVarArgType", "startMonitoringForRegion"]
+- !private ["PSs11CVarArgType", "startRangingBeaconsInRegion"]
+- !private ["PSs11CVarArgType", "startUpdatingLocation"]
 - ["PSs11CVarArgType", "window"]
 - ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "CLBeaconRegion"]
+- !private ["PSs23CustomStringConvertible", "CLLocationManager"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSLog"]
+- !private ["PSs23CustomStringConvertible", "NSUUID"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIApplication"]
+- !private ["PSs23CustomStringConvertible", "UILocalNotification"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "alertBody"]
 - ["PSs23CustomStringConvertible", "application"]
 - ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -86,9 +242,40 @@ depends-member:
 - ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["PSs23CustomStringConvertible", "applicationWillResignActive"]
 - ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "locationManager"]
+- ["PSs23CustomStringConvertible", "locationManagerDidPauseLocationUpdates"]
+- ["PSs23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
+- ["PSs23CustomStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs23CustomStringConvertible", "pausesLocationUpdatesAutomatically"]
+- !private ["PSs23CustomStringConvertible", "proximity"]
+- !private ["PSs23CustomStringConvertible", "requestAlwaysAuthorization"]
+- !private ["PSs23CustomStringConvertible", "respondsToSelector"]
+- !private ["PSs23CustomStringConvertible", "scheduleLocalNotification"]
+- ["PSs23CustomStringConvertible", "sendLocalNotificationWithMessage"]
+- !private ["PSs23CustomStringConvertible", "sharedApplication"]
+- !private ["PSs23CustomStringConvertible", "startMonitoringForRegion"]
+- !private ["PSs23CustomStringConvertible", "startRangingBeaconsInRegion"]
+- !private ["PSs23CustomStringConvertible", "startUpdatingLocation"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
 - ["PSs23CustomStringConvertible", "window"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CLBeaconRegion"]
+- !private ["PSs9Equatable", "CLLocationManager"]
+- !private ["PSs9Equatable", "Distance"]
+- ["PSs9Equatable", "Far"]
+- ["PSs9Equatable", "Immediate"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSLog"]
+- !private ["PSs9Equatable", "NSUUID"]
+- ["PSs9Equatable", "Near"]
+- !private ["PSs9Equatable", "UIApplication"]
+- !private ["PSs9Equatable", "UILocalNotification"]
+- ["PSs9Equatable", "Unknown"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "alertBody"]
 - ["PSs9Equatable", "application"]
 - ["PSs9Equatable", "applicationDidBecomeActive"]
 - ["PSs9Equatable", "applicationDidEnterBackground"]
@@ -101,9 +288,41 @@ depends-member:
 - ["PSs9Equatable", "applicationWillEnterForeground"]
 - ["PSs9Equatable", "applicationWillResignActive"]
 - ["PSs9Equatable", "applicationWillTerminate"]
+- !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "locationManager"]
+- ["PSs9Equatable", "locationManagerDidPauseLocationUpdates"]
+- ["PSs9Equatable", "locationManagerDidResumeLocationUpdates"]
+- ["PSs9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs9Equatable", "pausesLocationUpdatesAutomatically"]
+- !private ["PSs9Equatable", "proximity"]
+- !private ["PSs9Equatable", "requestAlwaysAuthorization"]
+- !private ["PSs9Equatable", "respondsToSelector"]
+- !private ["PSs9Equatable", "scheduleLocalNotification"]
+- ["PSs9Equatable", "sendLocalNotificationWithMessage"]
+- !private ["PSs9Equatable", "sharedApplication"]
+- !private ["PSs9Equatable", "startMonitoringForRegion"]
+- !private ["PSs9Equatable", "startRangingBeaconsInRegion"]
+- !private ["PSs9Equatable", "startUpdatingLocation"]
 - ["PSs9Equatable", "window"]
 - ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "CLBeaconRegion"]
+- !private ["PSs8Hashable", "CLLocationManager"]
+- !private ["PSs8Hashable", "Distance"]
+- ["PSs8Hashable", "Far"]
+- ["PSs8Hashable", "Immediate"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSLog"]
+- !private ["PSs8Hashable", "NSUUID"]
+- ["PSs8Hashable", "Near"]
+- !private ["PSs8Hashable", "UIApplication"]
+- !private ["PSs8Hashable", "UILocalNotification"]
+- ["PSs8Hashable", "Unknown"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "alertBody"]
 - ["PSs8Hashable", "application"]
 - ["PSs8Hashable", "applicationDidBecomeActive"]
 - ["PSs8Hashable", "applicationDidEnterBackground"]
@@ -116,14 +335,76 @@ depends-member:
 - ["PSs8Hashable", "applicationWillEnterForeground"]
 - ["PSs8Hashable", "applicationWillResignActive"]
 - ["PSs8Hashable", "applicationWillTerminate"]
+- !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "locationManager"]
+- ["PSs8Hashable", "locationManagerDidPauseLocationUpdates"]
+- ["PSs8Hashable", "locationManagerDidResumeLocationUpdates"]
+- ["PSs8Hashable", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs8Hashable", "pausesLocationUpdatesAutomatically"]
+- !private ["PSs8Hashable", "proximity"]
+- !private ["PSs8Hashable", "requestAlwaysAuthorization"]
+- !private ["PSs8Hashable", "respondsToSelector"]
+- !private ["PSs8Hashable", "scheduleLocalNotification"]
+- ["PSs8Hashable", "sendLocalNotificationWithMessage"]
+- !private ["PSs8Hashable", "sharedApplication"]
+- !private ["PSs8Hashable", "startMonitoringForRegion"]
+- !private ["PSs8Hashable", "startRangingBeaconsInRegion"]
+- !private ["PSs8Hashable", "startUpdatingLocation"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "alertBody"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "proximity"]
+- !private ["PSo9NSCopying", "alertBody"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "proximity"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CLBeacon"]
+- ["CSo8NSObject", "CLBeaconRegion"]
+- ["CSo8NSObject", "CLLocationManager"]
+- !private ["CSo8NSObject", "CLProximity"]
+- !private ["CSo8NSObject", "NSLog"]
 - ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "NSUUID"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UILocalNotification"]
 - ["CSo8NSObject", "UIWindow"]
+- !private ["CSo8NSObject", "alertBody"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -136,8 +417,30 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "locationManager"]
+- ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
+- ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
+- ["CSo8NSObject", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["CSo8NSObject", "pausesLocationUpdatesAutomatically"]
+- !private ["CSo8NSObject", "proximity"]
+- !private ["CSo8NSObject", "requestAlwaysAuthorization"]
+- !private ["CSo8NSObject", "respondsToSelector"]
+- !private ["CSo8NSObject", "scheduleLocalNotification"]
+- ["CSo8NSObject", "sendLocalNotificationWithMessage"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "startMonitoringForRegion"]
+- !private ["CSo8NSObject", "startRangingBeaconsInRegion"]
+- !private ["CSo8NSObject", "startUpdatingLocation"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "CLBeaconRegion"]
+- !private ["PSo16NSObjectProtocol", "CLLocationManager"]
+- !private ["PSo16NSObjectProtocol", "NSLog"]
+- !private ["PSo16NSObjectProtocol", "NSUUID"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UILocalNotification"]
+- !private ["PSo16NSObjectProtocol", "alertBody"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -150,9 +453,65 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "locationManager"]
+- ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
+- ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
+- ["PSo16NSObjectProtocol", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSo16NSObjectProtocol", "pausesLocationUpdatesAutomatically"]
+- !private ["PSo16NSObjectProtocol", "proximity"]
+- !private ["PSo16NSObjectProtocol", "requestAlwaysAuthorization"]
+- !private ["PSo16NSObjectProtocol", "respondsToSelector"]
+- !private ["PSo16NSObjectProtocol", "scheduleLocalNotification"]
+- ["PSo16NSObjectProtocol", "sendLocalNotificationWithMessage"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "startMonitoringForRegion"]
+- !private ["PSo16NSObjectProtocol", "startRangingBeaconsInRegion"]
+- !private ["PSo16NSObjectProtocol", "startUpdatingLocation"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "proximity"]
+- !private ["CSo6NSUUID", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- ["PSs16RawRepresentable", "Far"]
+- ["PSs16RawRepresentable", "Immediate"]
+- ["PSs16RawRepresentable", "Near"]
+- ["PSs16RawRepresentable", "Unknown"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["CSo13UIApplication", "scheduleLocalNotification"]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["PSo21UIApplicationDelegate", "CLBeaconRegion"]
+- !private ["PSo21UIApplicationDelegate", "CLLocationManager"]
+- !private ["PSo21UIApplicationDelegate", "NSLog"]
+- !private ["PSo21UIApplicationDelegate", "NSUUID"]
+- !private ["PSo21UIApplicationDelegate", "UIApplication"]
+- !private ["PSo21UIApplicationDelegate", "UILocalNotification"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -165,12 +524,27 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- ["PSo21UIApplicationDelegate", "locationManager"]
+- ["PSo21UIApplicationDelegate", "locationManagerDidPauseLocationUpdates"]
+- ["PSo21UIApplicationDelegate", "locationManagerDidResumeLocationUpdates"]
+- ["PSo21UIApplicationDelegate", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSo21UIApplicationDelegate", "sendLocalNotificationWithMessage"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
+- !private ["CSo19UILocalNotification", "alertBody"]
+- !private ["CSo19UILocalNotification", "init"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "CLBeacon"]
+- ["CSo11UIResponder", "CLBeaconRegion"]
+- ["CSo11UIResponder", "CLLocationManager"]
+- !private ["CSo11UIResponder", "CLProximity"]
+- !private ["CSo11UIResponder", "NSLog"]
 - ["CSo11UIResponder", "NSObject"]
+- !private ["CSo11UIResponder", "NSUUID"]
+- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UILocalNotification"]
 - ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
@@ -185,19 +559,124 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "locationManager"]
+- ["CSo11UIResponder", "locationManagerDidPauseLocationUpdates"]
+- ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
+- ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["CSo11UIResponder", "scheduleLocalNotification"]
+- ["CSo11UIResponder", "sendLocalNotificationWithMessage"]
+- !private ["CSo11UIResponder", "sharedApplication"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
 depends-nominal:
 - "PSs9AnyObject"
 - "C10iAssassins11AppDelegate"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "CSo8CLBeacon"
+- !private "CSo14CLBeaconRegion"
+- !private "CSo17CLLocationManager"
+- "PSo25CLLocationManagerDelegate"
+- "OSC11CLProximity"
+- !private "CSo8CLRegion"
 - "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
 - "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo6NSUUID"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- "PSs16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "CSo13UIApplication"
 - "PSo21UIApplicationDelegate"
+- !private "CSo19UILocalNotification"
 - "CSo11UIResponder"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -238,4 +717,5 @@ depends-external:
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "95ac5e14a17ce6003db610d2e51ecc55"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "7e097bf1b6ff51935b4be0aa523f8b1e"

@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C10iAssassins14ViewController", ""]
 provides-dynamic-lookup:
-- "returnUserData"
 - "unwindToViewOtherController"
-- "viewDidLoad"
 - "loginButtonDidLogOut"
 - "didReceiveMemoryWarning"
+- "returnUserData"
+- "viewDidLoad"
 - "loginButton"
 depends-top-level:
-- !private "FBSDKAccessToken"
 - !private "String"
-- !private "FBSDKGraphRequest"
-- "NSError"
 - !private "print"
-- "UIViewController"
 - !private "Array"
-- "FBSDKLoginManagerLoginResult"
-- "FBSDKLoginButtonDelegate"
+- !private "FBSDKGraphRequest"
 - !private "!="
-- "UIStoryboardSegue"
-- !private "Void"
-- "ViewController"
 - !private "StringLiteralType"
-- !private "+"
+- "FBSDKLoginButtonDelegate"
+- !private "Void"
 - !private "NSString"
+- "FBSDKLoginManagerLoginResult"
+- "UIViewController"
+- "NSError"
+- !private "FBSDKAccessToken"
+- !private "+"
+- "UIStoryboardSegue"
 - "FBSDKLoginButton"
+- "ViewController"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -617,4 +617,5 @@ depends-external:
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "d6ac2bc32df49cf56def991c2a810a2b"
