@@ -28,7 +28,7 @@ class WaitingViewController: UIViewController {
         
     }
     
-    /*
+    
     @IBAction func onClickStart(sender: AnyObject) {
         
         //TODO set game from inactive to active, set everyone to alive, assign targets to everyone, starting game stuff
@@ -36,7 +36,6 @@ class WaitingViewController: UIViewController {
         
         performSegueWithIdentifier("toStartGame", sender: nil)
     }
-*/
     
     
     

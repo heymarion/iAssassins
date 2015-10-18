@@ -152,10 +152,16 @@ SWIFT_CLASS("_TtC10iAssassins24CreateJoinViewController")
 @class CLLocationManager;
 @class CLBeaconRegion;
 @class CLBeacon;
+@class UILabel;
+@class UIImageView;
 
 SWIFT_CLASS("_TtC10iAssassins20TargetViewController")
 @interface TargetViewController : UIViewController <CLLocationManagerDelegate>
 @property (nonatomic, readonly) CLLocationManager * __nonnull locationManager;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified currentGameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified participantsLeft;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified currTarget;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified targetImage;
 @property (nonatomic, readonly) CLBeaconRegion * __nonnull region;
 - (void)viewDidLoad;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * __nonnull)beacons inRegion:(CLBeaconRegion * __nonnull)region;

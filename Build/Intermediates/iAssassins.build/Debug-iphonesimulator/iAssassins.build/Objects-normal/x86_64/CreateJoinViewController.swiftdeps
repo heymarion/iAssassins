@@ -6,138 +6,352 @@ provides-nominal:
 provides-member:
 - ["C10iAssassins24CreateJoinViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "logo"
+- "joinId"
+- "onCreateSubmit"
+- "createSubmit"
+- "onJoinSubmit"
 - "viewDidLoad"
+- "createId"
+- "joinSubmit"
+- "didReceiveMemoryWarning"
 depends-top-level:
+- "UITextField"
+- !private "StringLiteralType"
 - "UIViewController"
-- "UIImageView"
 - "CreateJoinViewController"
+- "UIButton"
+- !private "!"
+- "AnyObject"
 depends-member:
+- ["PSs9AnyObject", "createId"]
+- ["PSs9AnyObject", "createSubmit"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "logo"]
+- !private ["PSs9AnyObject", "isEmpty"]
+- ["PSs9AnyObject", "joinId"]
+- ["PSs9AnyObject", "joinSubmit"]
+- ["PSs9AnyObject", "onCreateSubmit"]
+- ["PSs9AnyObject", "onJoinSubmit"]
+- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
+- !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- ["PSs11CVarArgType", "createId"]
+- ["PSs11CVarArgType", "createSubmit"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
 - ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "logo"]
+- !private ["PSs11CVarArgType", "isEmpty"]
+- ["PSs11CVarArgType", "joinId"]
+- ["PSs11CVarArgType", "joinSubmit"]
+- ["PSs11CVarArgType", "onCreateSubmit"]
+- ["PSs11CVarArgType", "onJoinSubmit"]
+- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
+- !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
-- ["C10iAssassins24CreateJoinViewController", "UIImageView"]
+- !private ["PSs10Comparable", "isEmpty"]
+- ["C10iAssassins24CreateJoinViewController", "AnyObject"]
+- ["C10iAssassins24CreateJoinViewController", "UIButton"]
+- ["C10iAssassins24CreateJoinViewController", "UITextField"]
+- ["C10iAssassins24CreateJoinViewController", "createId"]
+- ["C10iAssassins24CreateJoinViewController", "createSubmit"]
 - ["C10iAssassins24CreateJoinViewController", "deinit"]
 - ["C10iAssassins24CreateJoinViewController", "didReceiveMemoryWarning"]
 - ["C10iAssassins24CreateJoinViewController", "init"]
-- ["C10iAssassins24CreateJoinViewController", "logo"]
+- ["C10iAssassins24CreateJoinViewController", "joinId"]
+- ["C10iAssassins24CreateJoinViewController", "joinSubmit"]
+- ["C10iAssassins24CreateJoinViewController", "onCreateSubmit"]
+- ["C10iAssassins24CreateJoinViewController", "onJoinSubmit"]
+- !private ["C10iAssassins24CreateJoinViewController", "performSegueWithIdentifier"]
 - ["C10iAssassins24CreateJoinViewController", "viewDidLoad"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "isEmpty"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "createId"]
+- ["PSs23CustomStringConvertible", "createSubmit"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "logo"]
+- !private ["PSs23CustomStringConvertible", "isEmpty"]
+- ["PSs23CustomStringConvertible", "joinId"]
+- ["PSs23CustomStringConvertible", "joinSubmit"]
+- ["PSs23CustomStringConvertible", "onCreateSubmit"]
+- ["PSs23CustomStringConvertible", "onJoinSubmit"]
+- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "createId"]
+- ["PSs9Equatable", "createSubmit"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
 - ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "logo"]
+- !private ["PSs9Equatable", "isEmpty"]
+- ["PSs9Equatable", "joinId"]
+- ["PSs9Equatable", "joinSubmit"]
+- ["PSs9Equatable", "onCreateSubmit"]
+- ["PSs9Equatable", "onJoinSubmit"]
+- !private ["PSs9Equatable", "performSegueWithIdentifier"]
+- !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "createId"]
+- ["PSs8Hashable", "createSubmit"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
 - ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "logo"]
+- !private ["PSs8Hashable", "isEmpty"]
+- ["PSs8Hashable", "joinId"]
+- ["PSs8Hashable", "joinSubmit"]
+- ["PSs8Hashable", "onCreateSubmit"]
+- ["PSs8Hashable", "onJoinSubmit"]
+- !private ["PSs8Hashable", "performSegueWithIdentifier"]
+- !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- !private ["PSs14MirrorPathType", "isEmpty"]
+- ["PSo8NSCoding", "createId"]
+- ["PSo8NSCoding", "createSubmit"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "logo"]
+- !private ["PSo8NSCoding", "isEmpty"]
+- ["PSo8NSCoding", "joinId"]
+- ["PSo8NSCoding", "joinSubmit"]
+- ["PSo8NSCoding", "onCreateSubmit"]
+- ["PSo8NSCoding", "onJoinSubmit"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "isEmpty"]
+- ["PSo26NSExtensionRequestHandling", "createId"]
+- ["PSo26NSExtensionRequestHandling", "createSubmit"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
-- ["PSo26NSExtensionRequestHandling", "logo"]
+- ["PSo26NSExtensionRequestHandling", "joinId"]
+- ["PSo26NSExtensionRequestHandling", "joinSubmit"]
+- ["PSo26NSExtensionRequestHandling", "onCreateSubmit"]
+- ["PSo26NSExtensionRequestHandling", "onJoinSubmit"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- ["CSo8NSObject", "UIImageView"]
+- !private ["PSo16NSMutableCopying", "isEmpty"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "createId"]
+- ["CSo8NSObject", "createSubmit"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "logo"]
+- !private ["CSo8NSObject", "isEmpty"]
+- ["CSo8NSObject", "joinId"]
+- ["CSo8NSObject", "joinSubmit"]
+- ["CSo8NSObject", "onCreateSubmit"]
+- ["CSo8NSObject", "onJoinSubmit"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "createId"]
+- ["PSo16NSObjectProtocol", "createSubmit"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "logo"]
+- !private ["PSo16NSObjectProtocol", "isEmpty"]
+- ["PSo16NSObjectProtocol", "joinId"]
+- ["PSo16NSObjectProtocol", "joinSubmit"]
+- ["PSo16NSObjectProtocol", "onCreateSubmit"]
+- ["PSo16NSObjectProtocol", "onJoinSubmit"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "isEmpty"]
+- !private ["CSo8NSString", "isEmpty"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["PSs16OutputStreamType", "isEmpty"]
+- !private ["PSs10Streamable", "isEmpty"]
+- !private ["SS", "isEmpty"]
+- !private ["PSs30StringInterpolationConvertible", "isEmpty"]
+- !private ["PSs24StringLiteralConvertible", "isEmpty"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo21UIAppearanceContainer", "createId"]
+- ["PSo21UIAppearanceContainer", "createSubmit"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", "logo"]
+- ["PSo21UIAppearanceContainer", "joinId"]
+- ["PSo21UIAppearanceContainer", "joinSubmit"]
+- ["PSo21UIAppearanceContainer", "onCreateSubmit"]
+- ["PSo21UIAppearanceContainer", "onJoinSubmit"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "createId"]
+- ["PSo18UIContentContainer", "createSubmit"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
-- ["PSo18UIContentContainer", "logo"]
+- ["PSo18UIContentContainer", "joinId"]
+- ["PSo18UIContentContainer", "joinSubmit"]
+- ["PSo18UIContentContainer", "onCreateSubmit"]
+- ["PSo18UIContentContainer", "onJoinSubmit"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
-- ["CSo11UIResponder", "UIImageView"]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo10UIKeyInput", "text"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "createId"]
+- ["CSo11UIResponder", "createSubmit"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "logo"]
+- ["CSo11UIResponder", "joinId"]
+- ["CSo11UIResponder", "joinSubmit"]
+- ["CSo11UIResponder", "onCreateSubmit"]
+- ["CSo11UIResponder", "onJoinSubmit"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "createId"]
+- ["PSo16UIStateRestoring", "createSubmit"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
-- ["PSo16UIStateRestoring", "logo"]
+- ["PSo16UIStateRestoring", "joinId"]
+- ["PSo16UIStateRestoring", "joinSubmit"]
+- ["PSo16UIStateRestoring", "onCreateSubmit"]
+- ["PSo16UIStateRestoring", "onJoinSubmit"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- ["PSo18UITraitEnvironment", "createId"]
+- ["PSo18UITraitEnvironment", "createSubmit"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", "logo"]
+- ["PSo18UITraitEnvironment", "joinId"]
+- ["PSo18UITraitEnvironment", "joinSubmit"]
+- ["PSo18UITraitEnvironment", "onCreateSubmit"]
+- ["PSo18UITraitEnvironment", "onJoinSubmit"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
-- ["CSo16UIViewController", "UIImageView"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "createId"]
+- ["CSo16UIViewController", "createSubmit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
-- ["CSo16UIViewController", "logo"]
+- ["CSo16UIViewController", "joinId"]
+- ["CSo16UIViewController", "joinSubmit"]
+- ["CSo16UIViewController", "onCreateSubmit"]
+- ["CSo16UIViewController", "onJoinSubmit"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "isEmpty"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "isEmpty"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "isEmpty"]
+- !private ["PSs16_CocoaStringType", "isEmpty"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "isEmpty"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "isEmpty"]
+- !private ["PSs12_Reflectable", "text"]
 depends-nominal:
 - "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - "PSs11CVarArgType"
+- !private "PSs10Comparable"
 - "C10iAssassins24CreateJoinViewController"
+- "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - "PSs8Hashable"
+- !private "PSs14MirrorPathType"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo10UIKeyInput"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/Bridging-header.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Bridging-header.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
@@ -145,13 +359,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "41afccab12ce0b70796ef6f2dff889b1"
+interface-hash: "1ecd10fae42a19e490901a406c2b93b6"

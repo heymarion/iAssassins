@@ -1,8 +1,11 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
-options: "6377b37a5ecea3c244d6278f906728ee"
-build_time: [498433114, 580836000]
+options: "5826c98ee5b5ec22cd8ae42cd79bc201"
+build_time: [498465837, 211028000]
 inputs: 
-	"/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/TargetViewController.swift": [498421950, 0]
-	"/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/AppDelegate.swift": [498421950, 0]
-	"/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/ViewController.swift": [498421950, 0]
-	"/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/CreateJoinViewController.swift": [498421950, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/TargetViewController.swift": [498465831, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/CreateJoinViewController.swift": [498462905, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/WaitingViewController.swift": [498464105, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/Admin2ViewController.swift": [498463394, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/AdminViewController.swift": [498457869, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/ViewController.swift": [498421950, 0]
+	"/Users/vinh/Desktop/iAssassins/iAssassins/AppDelegate.swift": [498421950, 0]

@@ -6,44 +6,58 @@ provides-nominal:
 provides-member:
 - ["C10iAssassins20TargetViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
+- "locationManager"
+- "locationManager"
+- "participantsLeft"
 - "region"
-- "locationManager"
-- "locationManager"
+- "viewDidLoad"
+- "currTarget"
+- "currentGameLabel"
 - "didReceiveMemoryWarning"
+- "targetImage"
 depends-top-level:
-- "NSUUID"
 - "StringLiteralType"
-- "TargetViewController"
-- "CLBeaconRegion"
-- !private ">"
-- "CLLocationManager"
-- !private "!="
-- !private "CLAuthorizationStatus"
+- "UILabel"
 - "CLLocationManagerDelegate"
-- !private "print"
 - "UIViewController"
-- "CLBeacon"
+- "UIImageView"
+- !private ">"
+- !private "UIImage"
+- !private "!="
+- "CLLocationManager"
+- "CLBeaconRegion"
+- !private "CLAuthorizationStatus"
+- !private "print"
+- "TargetViewController"
+- "NSUUID"
 - !private "CLProximity"
+- "CLBeacon"
 depends-member:
 - !private ["PSs9AnyObject", "CLAuthorizationStatus"]
 - ["PSs9AnyObject", "CLBeaconRegion"]
 - ["PSs9AnyObject", "CLLocationManager"]
 - !private ["PSs9AnyObject", "CLProximity"]
 - ["PSs9AnyObject", "NSUUID"]
+- !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "authorizationStatus"]
+- ["PSs9AnyObject", "currTarget"]
+- ["PSs9AnyObject", "currentGameLabel"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "locationManager"]
 - ["PSs9AnyObject", "locationManagerDidPauseLocationUpdates"]
 - ["PSs9AnyObject", "locationManagerDidResumeLocationUpdates"]
 - ["PSs9AnyObject", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSs9AnyObject", "participantsLeft"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "proximity"]
 - ["PSs9AnyObject", "region"]
 - !private ["PSs9AnyObject", "requestWhenInUseAuthorization"]
 - !private ["PSs9AnyObject", "startRangingBeaconsInRegion"]
+- ["PSs9AnyObject", "targetImage"]
+- !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Generator"]
@@ -68,6 +82,7 @@ depends-member:
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["OSC21CLAuthorizationStatus", "AuthorizedWhenInUse"]
@@ -84,12 +99,17 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
 - !private ["PSo25CLLocationManagerDelegate", "CLProximity"]
 - ["PSo25CLLocationManagerDelegate", "NSUUID"]
+- !private ["PSo25CLLocationManagerDelegate", "UIImage"]
+- !private ["PSo25CLLocationManagerDelegate", "currTarget"]
+- !private ["PSo25CLLocationManagerDelegate", "currentGameLabel"]
 - ["PSo25CLLocationManagerDelegate", "locationManager"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSo25CLLocationManagerDelegate", "participantsLeft"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "region"]
+- !private ["PSo25CLLocationManagerDelegate", "targetImage"]
 - ["PSo25CLLocationManagerDelegate", ""]
 - !private ["OSC11CLProximity", "RawValue"]
 - !private ["OSC11CLProximity", "Unknown"]
@@ -101,21 +121,29 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - ["PSs11CVarArgType", "NSUUID"]
+- !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "authorizationStatus"]
+- ["PSs11CVarArgType", "currTarget"]
+- ["PSs11CVarArgType", "currentGameLabel"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "locationManager"]
 - ["PSs11CVarArgType", "locationManagerDidPauseLocationUpdates"]
 - ["PSs11CVarArgType", "locationManagerDidResumeLocationUpdates"]
 - ["PSs11CVarArgType", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSs11CVarArgType", "participantsLeft"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "proximity"]
 - ["PSs11CVarArgType", "region"]
 - !private ["PSs11CVarArgType", "requestWhenInUseAuthorization"]
 - !private ["PSs11CVarArgType", "startRangingBeaconsInRegion"]
+- ["PSs11CVarArgType", "targetImage"]
+- !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
@@ -125,12 +153,14 @@ depends-member:
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - !private ["PSs28CustomDebugStringConvertible", "filter"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "CLAuthorizationStatus"]
 - ["PSs23CustomStringConvertible", "CLBeaconRegion"]
@@ -142,26 +172,34 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - ["PSs23CustomStringConvertible", "NSUUID"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "authorizationStatus"]
 - !private ["PSs23CustomStringConvertible", "count"]
+- ["PSs23CustomStringConvertible", "currTarget"]
+- ["PSs23CustomStringConvertible", "currentGameLabel"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["PSs23CustomStringConvertible", "filter"]
+- !private ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "locationManager"]
 - ["PSs23CustomStringConvertible", "locationManagerDidPauseLocationUpdates"]
 - ["PSs23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
 - ["PSs23CustomStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSs23CustomStringConvertible", "participantsLeft"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "proximity"]
 - ["PSs23CustomStringConvertible", "region"]
 - !private ["PSs23CustomStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["PSs23CustomStringConvertible", "startRangingBeaconsInRegion"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "targetImage"]
+- !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "AuthorizedWhenInUse"]
 - !private ["PSs9Equatable", "CLAuthorizationStatus"]
 - ["PSs9Equatable", "CLBeaconRegion"]
@@ -171,23 +209,32 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - ["PSs9Equatable", "NSUUID"]
 - !private ["PSs9Equatable", "RawValue"]
+- !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "Unknown"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "authorizationStatus"]
+- ["PSs9Equatable", "currTarget"]
+- ["PSs9Equatable", "currentGameLabel"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "locationManager"]
 - ["PSs9Equatable", "locationManagerDidPauseLocationUpdates"]
 - ["PSs9Equatable", "locationManagerDidResumeLocationUpdates"]
 - ["PSs9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSs9Equatable", "participantsLeft"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "proximity"]
 - ["PSs9Equatable", "region"]
 - !private ["PSs9Equatable", "requestWhenInUseAuthorization"]
 - !private ["PSs9Equatable", "startRangingBeaconsInRegion"]
+- ["PSs9Equatable", "targetImage"]
+- !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
@@ -200,21 +247,28 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - ["PSs8Hashable", "NSUUID"]
 - !private ["PSs8Hashable", "RawValue"]
+- !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "Unknown"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "authorizationStatus"]
+- ["PSs8Hashable", "currTarget"]
+- ["PSs8Hashable", "currentGameLabel"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "locationManager"]
 - ["PSs8Hashable", "locationManagerDidPauseLocationUpdates"]
 - ["PSs8Hashable", "locationManagerDidResumeLocationUpdates"]
 - ["PSs8Hashable", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSs8Hashable", "participantsLeft"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "proximity"]
 - ["PSs8Hashable", "region"]
 - !private ["PSs8Hashable", "requestWhenInUseAuthorization"]
 - !private ["PSs8Hashable", "startRangingBeaconsInRegion"]
+- ["PSs8Hashable", "targetImage"]
+- !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
 - !private ["PSs9Indexable", "Generator"]
@@ -227,6 +281,11 @@ depends-member:
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
@@ -235,6 +294,7 @@ depends-member:
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
@@ -261,15 +321,22 @@ depends-member:
 - ["PSo8NSCoding", "CLLocationManager"]
 - !private ["PSo8NSCoding", "CLProximity"]
 - ["PSo8NSCoding", "NSUUID"]
+- !private ["PSo8NSCoding", "UIImage"]
+- ["PSo8NSCoding", "currTarget"]
+- ["PSo8NSCoding", "currentGameLabel"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "locationManager"]
 - ["PSo8NSCoding", "locationManagerDidPauseLocationUpdates"]
 - ["PSo8NSCoding", "locationManagerDidResumeLocationUpdates"]
 - ["PSo8NSCoding", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo8NSCoding", "participantsLeft"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "proximity"]
 - ["PSo8NSCoding", "region"]
+- ["PSo8NSCoding", "targetImage"]
+- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "init"]
@@ -279,59 +346,84 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
 - !private ["PSo26NSExtensionRequestHandling", "CLProximity"]
 - ["PSo26NSExtensionRequestHandling", "NSUUID"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- ["PSo26NSExtensionRequestHandling", "currTarget"]
+- ["PSo26NSExtensionRequestHandling", "currentGameLabel"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "locationManager"]
 - ["PSo26NSExtensionRequestHandling", "locationManagerDidPauseLocationUpdates"]
 - ["PSo26NSExtensionRequestHandling", "locationManagerDidResumeLocationUpdates"]
 - ["PSo26NSExtensionRequestHandling", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo26NSExtensionRequestHandling", "participantsLeft"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "region"]
+- ["PSo26NSExtensionRequestHandling", "targetImage"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "CLAuthorizationStatus"]
 - ["CSo8NSObject", "CLBeacon"]
 - ["CSo8NSObject", "CLBeaconRegion"]
 - ["CSo8NSObject", "CLLocationManager"]
 - !private ["CSo8NSObject", "CLProximity"]
 - ["CSo8NSObject", "NSUUID"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "authorizationStatus"]
+- ["CSo8NSObject", "currTarget"]
+- ["CSo8NSObject", "currentGameLabel"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "locationManager"]
 - ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
 - ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
 - ["CSo8NSObject", "locationManagerShouldDisplayHeadingCalibration"]
+- ["CSo8NSObject", "participantsLeft"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "proximity"]
 - ["CSo8NSObject", "region"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
 - !private ["CSo8NSObject", "startRangingBeaconsInRegion"]
+- ["CSo8NSObject", "targetImage"]
+- !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CLAuthorizationStatus"]
 - ["PSo16NSObjectProtocol", "CLBeaconRegion"]
 - ["PSo16NSObjectProtocol", "CLLocationManager"]
 - !private ["PSo16NSObjectProtocol", "CLProximity"]
 - ["PSo16NSObjectProtocol", "NSUUID"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "authorizationStatus"]
+- ["PSo16NSObjectProtocol", "currTarget"]
+- ["PSo16NSObjectProtocol", "currentGameLabel"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "locationManager"]
 - ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
 - ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
 - ["PSo16NSObjectProtocol", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo16NSObjectProtocol", "participantsLeft"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "proximity"]
 - ["PSo16NSObjectProtocol", "region"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
 - !private ["PSo16NSObjectProtocol", "startRangingBeaconsInRegion"]
+- ["PSo16NSObjectProtocol", "targetImage"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "proximity"]
+- !private ["CSo8NSString", "init"]
 - ["CSo6NSUUID", "init"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
@@ -360,14 +452,23 @@ depends-member:
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["C10iAssassins20TargetViewController", "CLAuthorizationStatus"]
 - ["C10iAssassins20TargetViewController", "CLBeacon"]
 - ["C10iAssassins20TargetViewController", "CLBeaconRegion"]
 - ["C10iAssassins20TargetViewController", "CLLocationManager"]
 - !private ["C10iAssassins20TargetViewController", "CLProximity"]
 - ["C10iAssassins20TargetViewController", "NSUUID"]
+- !private ["C10iAssassins20TargetViewController", "UIImage"]
+- ["C10iAssassins20TargetViewController", "UIImageView"]
+- ["C10iAssassins20TargetViewController", "UILabel"]
+- ["C10iAssassins20TargetViewController", "currTarget"]
+- ["C10iAssassins20TargetViewController", "currentGameLabel"]
 - ["C10iAssassins20TargetViewController", "deinit"]
 - ["C10iAssassins20TargetViewController", "didReceiveMemoryWarning"]
 - ["C10iAssassins20TargetViewController", "init"]
@@ -375,22 +476,36 @@ depends-member:
 - ["C10iAssassins20TargetViewController", "locationManagerDidPauseLocationUpdates"]
 - ["C10iAssassins20TargetViewController", "locationManagerDidResumeLocationUpdates"]
 - ["C10iAssassins20TargetViewController", "locationManagerShouldDisplayHeadingCalibration"]
+- ["C10iAssassins20TargetViewController", "participantsLeft"]
 - !private ["C10iAssassins20TargetViewController", "print"]
 - ["C10iAssassins20TargetViewController", "region"]
+- ["C10iAssassins20TargetViewController", "targetImage"]
 - ["C10iAssassins20TargetViewController", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CLAuthorizationStatus"]
 - ["PSo21UIAppearanceContainer", "CLBeaconRegion"]
 - ["PSo21UIAppearanceContainer", "CLLocationManager"]
 - !private ["PSo21UIAppearanceContainer", "CLProximity"]
 - ["PSo21UIAppearanceContainer", "NSUUID"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- ["PSo21UIAppearanceContainer", "currTarget"]
+- ["PSo21UIAppearanceContainer", "currentGameLabel"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "locationManager"]
 - ["PSo21UIAppearanceContainer", "locationManagerDidPauseLocationUpdates"]
 - ["PSo21UIAppearanceContainer", "locationManagerDidResumeLocationUpdates"]
 - ["PSo21UIAppearanceContainer", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo21UIAppearanceContainer", "participantsLeft"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "region"]
+- ["PSo21UIAppearanceContainer", "targetImage"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CLAuthorizationStatus"]
@@ -398,44 +513,70 @@ depends-member:
 - ["PSo18UIContentContainer", "CLLocationManager"]
 - !private ["PSo18UIContentContainer", "CLProximity"]
 - ["PSo18UIContentContainer", "NSUUID"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- ["PSo18UIContentContainer", "currTarget"]
+- ["PSo18UIContentContainer", "currentGameLabel"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "locationManager"]
 - ["PSo18UIContentContainer", "locationManagerDidPauseLocationUpdates"]
 - ["PSo18UIContentContainer", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UIContentContainer", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo18UIContentContainer", "participantsLeft"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "region"]
+- ["PSo18UIContentContainer", "targetImage"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "CLAuthorizationStatus"]
 - ["CSo11UIResponder", "CLBeacon"]
 - ["CSo11UIResponder", "CLBeaconRegion"]
 - ["CSo11UIResponder", "CLLocationManager"]
 - !private ["CSo11UIResponder", "CLProximity"]
 - ["CSo11UIResponder", "NSUUID"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "currTarget"]
+- ["CSo11UIResponder", "currentGameLabel"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "locationManager"]
 - ["CSo11UIResponder", "locationManagerDidPauseLocationUpdates"]
 - ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
 - ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
+- ["CSo11UIResponder", "participantsLeft"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "region"]
+- ["CSo11UIResponder", "targetImage"]
+- !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "CLAuthorizationStatus"]
 - ["PSo16UIStateRestoring", "CLBeaconRegion"]
 - ["PSo16UIStateRestoring", "CLLocationManager"]
 - !private ["PSo16UIStateRestoring", "CLProximity"]
 - ["PSo16UIStateRestoring", "NSUUID"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- ["PSo16UIStateRestoring", "currTarget"]
+- ["PSo16UIStateRestoring", "currentGameLabel"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "locationManager"]
 - ["PSo16UIStateRestoring", "locationManagerDidPauseLocationUpdates"]
 - ["PSo16UIStateRestoring", "locationManagerDidResumeLocationUpdates"]
 - ["PSo16UIStateRestoring", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo16UIStateRestoring", "participantsLeft"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "region"]
+- ["PSo16UIStateRestoring", "targetImage"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CLAuthorizationStatus"]
@@ -443,32 +584,55 @@ depends-member:
 - ["PSo18UITraitEnvironment", "CLLocationManager"]
 - !private ["PSo18UITraitEnvironment", "CLProximity"]
 - ["PSo18UITraitEnvironment", "NSUUID"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- ["PSo18UITraitEnvironment", "currTarget"]
+- ["PSo18UITraitEnvironment", "currentGameLabel"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "locationManager"]
 - ["PSo18UITraitEnvironment", "locationManagerDidPauseLocationUpdates"]
 - ["PSo18UITraitEnvironment", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UITraitEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo18UITraitEnvironment", "participantsLeft"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "region"]
+- ["PSo18UITraitEnvironment", "targetImage"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "CLAuthorizationStatus"]
 - ["CSo16UIViewController", "CLBeacon"]
 - ["CSo16UIViewController", "CLBeaconRegion"]
 - ["CSo16UIViewController", "CLLocationManager"]
 - !private ["CSo16UIViewController", "CLProximity"]
 - ["CSo16UIViewController", "NSUUID"]
+- !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "currTarget"]
+- ["CSo16UIViewController", "currentGameLabel"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "locationManager"]
 - ["CSo16UIViewController", "locationManagerDidPauseLocationUpdates"]
 - ["CSo16UIViewController", "locationManagerDidResumeLocationUpdates"]
 - ["CSo16UIViewController", "locationManagerShouldDisplayHeadingCalibration"]
+- ["CSo16UIViewController", "participantsLeft"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "region"]
+- ["CSo16UIViewController", "targetImage"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
@@ -477,8 +641,13 @@ depends-member:
 - !private ["PSs10_ArrayType", "filter"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
@@ -501,6 +670,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "filter"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
@@ -513,7 +683,10 @@ depends-member:
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "filter"]
+- !private ["PSs12_Reflectable", "image"]
+- !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "text"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
@@ -536,17 +709,25 @@ depends-nominal:
 - !private "OSC11CLProximity"
 - "CSo8CLRegion"
 - "PSs11CVarArgType"
+- !private "VSs9Character"
 - !private "PSs14CollectionType"
 - !private "PSs10Comparable"
 - !private "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- !private "Sd"
 - "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
 - !private "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
@@ -557,10 +738,14 @@ depends-nominal:
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "CSo6NSUUID"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
@@ -568,17 +753,41 @@ depends-nominal:
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
+- !private "PSs10Streamable"
 - !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
 - "C10iAssassins20TargetViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
 - !private "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
 - !private "PSs24_DestructorSafeContainer"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
@@ -591,28 +800,28 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/Bridging-header.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Bridging-header.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
@@ -620,13 +829,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "74a74d94f6c30ab20130675f5c5eb3ce"
+interface-hash: "4c8d6661cd983279712af022878f86d2"
