@@ -6,6 +6,7 @@
 //  Copyright © 2015 Marion. All rights reserved.
 //
 
+import Firebase
 import UIKit
 import FBSDKCoreKit
 import CoreLocation
