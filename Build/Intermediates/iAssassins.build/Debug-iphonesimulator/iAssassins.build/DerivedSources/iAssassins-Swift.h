@@ -93,47 +93,70 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class UIWindow;
-@class CLLocationManager;
-@class UIApplication;
-@class NSObject;
-
-SWIFT_CLASS("_TtC10iAssassins11AppDelegate")
-@interface AppDelegate : UIResponder <CLLocationManagerDelegate, UIApplicationDelegate>
-@property (nonatomic) UIWindow * __nullable window;
-@property (nonatomic) CLLocationManager * __nullable locationManager;
-- (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class CLBeacon;
-@class CLBeaconRegion;
-
-@interface AppDelegate (SWIFT_EXTENSION(iAssassins))
-- (void)sendLocalNotificationWithMessage:(NSString * __null_unspecified)message;
-- (void)locationManager:(CLLocationManager * __nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * __nonnull)beacons inRegion:(CLBeaconRegion * __nonnull)region;
-@end
-
-@class UIImageView;
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC10iAssassins24CreateJoinViewController")
-@interface CreateJoinViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified logo;
+SWIFT_CLASS("_TtC10iAssassins20Admin2ViewController")
+@interface Admin2ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified startGameButton;
+- (IBAction)onClickStart:(id __nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+
+SWIFT_CLASS("_TtC10iAssassins19AdminViewController")
+@interface AdminViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIWindow;
+@class UIApplication;
+@class NSObject;
+
+SWIFT_CLASS("_TtC10iAssassins11AppDelegate")
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic) UIWindow * __nullable window;
+- (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
+- (void)applicationWillResignActive:(UIApplication * __nonnull)application;
+- (void)applicationDidEnterBackground:(UIApplication * __nonnull)application;
+- (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
+- (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
+- (void)applicationWillTerminate:(UIApplication * __nonnull)application;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+
+SWIFT_CLASS("_TtC10iAssassins24CreateJoinViewController")
+@interface CreateJoinViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified joinSubmit;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified createSubmit;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified joinId;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified createId;
+- (void)viewDidLoad;
+- (IBAction)onCreateSubmit:(id __nonnull)sender;
+- (IBAction)onJoinSubmit:(id __nonnull)sender;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CLLocationManager;
+@class CLBeaconRegion;
+@class CLBeacon;
 
 SWIFT_CLASS("_TtC10iAssassins20TargetViewController")
 @interface TargetViewController : UIViewController <CLLocationManagerDelegate>
 @property (nonatomic, readonly) CLLocationManager * __nonnull locationManager;
 @property (nonatomic, readonly) CLBeaconRegion * __nonnull region;
-@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified scanButton;
 - (void)viewDidLoad;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * __nonnull)beacons inRegion:(CLBeaconRegion * __nonnull)region;
 - (void)didReceiveMemoryWarning;
@@ -145,7 +168,6 @@ SWIFT_CLASS("_TtC10iAssassins20TargetViewController")
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
 @class NSError;
-@class NSString;
 
 SWIFT_CLASS("_TtC10iAssassins14ViewController")
 @interface ViewController : UIViewController <FBSDKLoginButtonDelegate>
@@ -155,7 +177,16 @@ SWIFT_CLASS("_TtC10iAssassins14ViewController")
 - (void)loginButton:(FBSDKLoginButton * __null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * __null_unspecified)result error:(NSError * __null_unspecified)error;
 - (void)loginButtonDidLogOut:(FBSDKLoginButton * __null_unspecified)loginButton;
 - (void)returnUserData;
-- (BOOL)addUser:(NSString * __nonnull)firstAndLast uid:(NSString * __nonnull)uid selfPhotoURL:(NSString * __nonnull)selfPhotoURL targetPhotoURL:(NSString * __nonnull)targetPhotoURL;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10iAssassins21WaitingViewController")
+@interface WaitingViewController : UIViewController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

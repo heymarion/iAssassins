@@ -3,60 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict>
-		<key>Firebase.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-iAssassins.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-iAssassinsTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-iAssassinsUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-	</dict>
+	<dict/>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>569735B422E0E4CEEFC5C6955AFDE3A5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6FD2A9C6076C8733255E3D7D11E7FB05</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>986377EFBE45DB9C08342D1C5D1CE7E2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AE55048794B9C86CACD7FDDAC18439B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C06900910C3A6326D437273407CBB0AC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

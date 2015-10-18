@@ -16,8 +16,6 @@ class TargetViewController: UIViewController, CLLocationManagerDelegate {
     
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "a500248c-abc2-4206-9bd7-034f4fc9ed10")!, identifier: "Beacons")
     
-    @IBOutlet weak var scanButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,7 +37,6 @@ class TargetViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

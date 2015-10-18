@@ -7,26 +7,24 @@ provides-member:
 - ["C10iAssassins20TargetViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "locationManager"
-- "locationManager"
 - "region"
-- "scanButton"
+- "locationManager"
+- "locationManager"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
-- "TargetViewController"
-- !private "CLAuthorizationStatus"
-- "CLBeaconRegion"
-- "UIButton"
 - "NSUUID"
-- "CLLocationManager"
 - "StringLiteralType"
-- !private "!="
+- "TargetViewController"
+- "CLBeaconRegion"
 - !private ">"
-- "CLBeacon"
-- !private "CLProximity"
+- "CLLocationManager"
+- !private "!="
+- !private "CLAuthorizationStatus"
 - "CLLocationManagerDelegate"
 - !private "print"
+- "UIViewController"
+- "CLBeacon"
+- !private "CLProximity"
 depends-member:
 - !private ["PSs9AnyObject", "CLAuthorizationStatus"]
 - ["PSs9AnyObject", "CLBeaconRegion"]
@@ -45,7 +43,6 @@ depends-member:
 - !private ["PSs9AnyObject", "proximity"]
 - ["PSs9AnyObject", "region"]
 - !private ["PSs9AnyObject", "requestWhenInUseAuthorization"]
-- ["PSs9AnyObject", "scanButton"]
 - !private ["PSs9AnyObject", "startRangingBeaconsInRegion"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
@@ -116,7 +113,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "proximity"]
 - ["PSs11CVarArgType", "region"]
 - !private ["PSs11CVarArgType", "requestWhenInUseAuthorization"]
-- ["PSs11CVarArgType", "scanButton"]
 - !private ["PSs11CVarArgType", "startRangingBeaconsInRegion"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
@@ -162,7 +158,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "proximity"]
 - ["PSs23CustomStringConvertible", "region"]
 - !private ["PSs23CustomStringConvertible", "requestWhenInUseAuthorization"]
-- ["PSs23CustomStringConvertible", "scanButton"]
 - !private ["PSs23CustomStringConvertible", "startRangingBeaconsInRegion"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
@@ -190,7 +185,6 @@ depends-member:
 - !private ["PSs9Equatable", "proximity"]
 - ["PSs9Equatable", "region"]
 - !private ["PSs9Equatable", "requestWhenInUseAuthorization"]
-- ["PSs9Equatable", "scanButton"]
 - !private ["PSs9Equatable", "startRangingBeaconsInRegion"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
@@ -220,7 +214,6 @@ depends-member:
 - !private ["PSs8Hashable", "proximity"]
 - ["PSs8Hashable", "region"]
 - !private ["PSs8Hashable", "requestWhenInUseAuthorization"]
-- ["PSs8Hashable", "scanButton"]
 - !private ["PSs8Hashable", "startRangingBeaconsInRegion"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
@@ -277,7 +270,6 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "proximity"]
 - ["PSo8NSCoding", "region"]
-- ["PSo8NSCoding", "scanButton"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "init"]
@@ -295,7 +287,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "region"]
-- ["PSo26NSExtensionRequestHandling", "scanButton"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo8NSObject", "CLAuthorizationStatus"]
@@ -304,7 +295,6 @@ depends-member:
 - ["CSo8NSObject", "CLLocationManager"]
 - !private ["CSo8NSObject", "CLProximity"]
 - ["CSo8NSObject", "NSUUID"]
-- ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "authorizationStatus"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -317,7 +307,6 @@ depends-member:
 - !private ["CSo8NSObject", "proximity"]
 - ["CSo8NSObject", "region"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
-- ["CSo8NSObject", "scanButton"]
 - !private ["CSo8NSObject", "startRangingBeaconsInRegion"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CLAuthorizationStatus"]
@@ -337,7 +326,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "proximity"]
 - ["PSo16NSObjectProtocol", "region"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
-- ["PSo16NSObjectProtocol", "scanButton"]
 - !private ["PSo16NSObjectProtocol", "startRangingBeaconsInRegion"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
@@ -380,7 +368,6 @@ depends-member:
 - ["C10iAssassins20TargetViewController", "CLLocationManager"]
 - !private ["C10iAssassins20TargetViewController", "CLProximity"]
 - ["C10iAssassins20TargetViewController", "NSUUID"]
-- ["C10iAssassins20TargetViewController", "UIButton"]
 - ["C10iAssassins20TargetViewController", "deinit"]
 - ["C10iAssassins20TargetViewController", "didReceiveMemoryWarning"]
 - ["C10iAssassins20TargetViewController", "init"]
@@ -390,7 +377,6 @@ depends-member:
 - ["C10iAssassins20TargetViewController", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["C10iAssassins20TargetViewController", "print"]
 - ["C10iAssassins20TargetViewController", "region"]
-- ["C10iAssassins20TargetViewController", "scanButton"]
 - ["C10iAssassins20TargetViewController", "viewDidLoad"]
 - !private ["PSo21UIAppearanceContainer", "CLAuthorizationStatus"]
 - ["PSo21UIAppearanceContainer", "CLBeaconRegion"]
@@ -405,7 +391,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "region"]
-- ["PSo21UIAppearanceContainer", "scanButton"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CLAuthorizationStatus"]
@@ -421,7 +406,6 @@ depends-member:
 - ["PSo18UIContentContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "region"]
-- ["PSo18UIContentContainer", "scanButton"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo11UIResponder", "CLAuthorizationStatus"]
@@ -430,7 +414,6 @@ depends-member:
 - ["CSo11UIResponder", "CLLocationManager"]
 - !private ["CSo11UIResponder", "CLProximity"]
 - ["CSo11UIResponder", "NSUUID"]
-- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "locationManager"]
@@ -439,7 +422,6 @@ depends-member:
 - ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "region"]
-- ["CSo11UIResponder", "scanButton"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "CLAuthorizationStatus"]
 - ["PSo16UIStateRestoring", "CLBeaconRegion"]
@@ -454,7 +436,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "region"]
-- ["PSo16UIStateRestoring", "scanButton"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CLAuthorizationStatus"]
@@ -470,7 +451,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "region"]
-- ["PSo18UITraitEnvironment", "scanButton"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo16UIViewController", "CLAuthorizationStatus"]
@@ -479,7 +459,6 @@ depends-member:
 - ["CSo16UIViewController", "CLLocationManager"]
 - !private ["CSo16UIViewController", "CLProximity"]
 - ["CSo16UIViewController", "NSUUID"]
-- ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "locationManager"]
@@ -488,7 +467,6 @@ depends-member:
 - ["CSo16UIViewController", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "region"]
-- ["CSo16UIViewController", "scanButton"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["PSs10_ArrayType", "Generator"]
@@ -613,28 +591,28 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/Bridging-header.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/Bridging-header.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
@@ -642,13 +620,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/vinh/Desktop/BlrMke/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/vinh/Downloads/iAssassins-922d17a4cc5d2024ccabb735576abc7746429e1f/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "1c4b3afa32f398490476272022c87cda"
+interface-hash: "74a74d94f6c30ab20130675f5c5eb3ce"

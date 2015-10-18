@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
@@ -32,8 +31,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         
     }
     
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,7 +44,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         //let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("createJoin")
         
         //self.showViewController(vc as! UIViewController, sender: vc)
-        returnUserData()
+        
         performSegueWithIdentifier("segue1", sender: nil)
                     print("end")
         
@@ -73,14 +70,14 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             
         }
     }
+    
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
     }
     
     func returnUserData()
     {
-        let params = ["fields": "public_profile, first_name, last_name"]
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: params)
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
             
             if ((error) != nil)
@@ -91,55 +88,16 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             else
             {
                 print("fetched user: \(result)")
-                let userID : NSString = result.valueForKey("id") as! NSString
-                print("User id is: \(userID)")
+                let id : NSString = result.valueForKey("id") as! NSString
+                print("User id is: \(id)")
                 let firstName : NSString = result.valueForKey("first_name") as! NSString
                 let lastName : NSString = result.valueForKey("last_name") as! NSString
-                let firstAndLast = (firstName as String) + (lastName as String)
-                print(firstAndLast)
-                let selfPhotoURL = "http://graph.facebook.com/\(userID)/picture?type=large"
-                self.addUser(firstAndLast, uid: userID, selfPhotoURL: selfPhotoURL, targetPhotoURL: "")
+                print("User first name is: \(firstName)")
+                let firstAndLastName =  (firstName as String) + (lastName as String);
+                
             }
         })
     }
     
-    func addUser(firstAndLast:NSString, uid:NSString, selfPhotoURL:String, targetPhotoURL:String) -> Bool {
-        let request = NSMutableURLRequest(URL: NSURL(string: "ec2-54-186-237-21.us-west-2.compute.amazonaws.com:5433/addUser")!)
-        let session = NSURLSession.sharedSession()
-        request.HTTPMethod = "POST"
-        let params = ["fiD": "CAAIob3CfZAq4BAFE02nGxKT47GXBKVVSrZCPjZAJfHpDlw336ESr61oamX0tMD0CLmYlvq3T9OcTh19JMpdmvURPBaFlUL3EhalK79cOK8SExupFVKaKjlc3Lvib7ZB18RGqNx5rCjnRq5DZCRHE3ExTfgZAsfnc7Y2AmIvZCrwZAgh6yaq6Gsgd0hkWF4oPLGeYDBmOIcnV13Lu8wWeM3Yl",
-            "name": firstAndLast,
-            "uid": uid,
-            "beaconID": "",
-            "photoBytea" : selfPhotoURL,
-            ] as Dictionary<String, AnyObject>
-        let NewDictionary : NSData = NSKeyedArchiver.archivedDataWithRootObject(params)
-        let json = try! NSJSONSerialization.JSONObjectWithData(NewDictionary, options: .MutableContainers) as? [String:AnyObject]
-
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        
-        let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-            print("Response: \(response)")
-            let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print("Body: \(strData)")
-            // Did the JSONObjectWithData constructor return an error? If so, log the error to the console
-            if(error != nil) {
-                print(error!.localizedDescription)
-                let jsonStr = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                print("Error could not parse JSON: '\(jsonStr)'")
-            }
-            if let parseJSON = json {
-                // Okay, the parsedJSON is here, let's get the value for 'success' out of it
-                let success = parseJSON["success"] as? Int
-                print("Success: \(success)")
-            }
-            
-        })
-        
-        task.resume()
-        return true
-    }
 }
-
 
