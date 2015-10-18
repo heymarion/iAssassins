@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreLocation
+import Firebase
 
 
 class TargetViewController: UIViewController, CLLocationManagerDelegate {
@@ -23,6 +24,7 @@ class TargetViewController: UIViewController, CLLocationManagerDelegate {
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "a500248c-abc2-4206-9bd7-034f4fc9ed10")!, identifier: "Beacons")
     
     override func viewDidLoad() {
+        var ref = Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
