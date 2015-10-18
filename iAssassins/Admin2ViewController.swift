@@ -17,6 +17,7 @@ class Admin2ViewController: UIViewController {
     
     @IBAction func onClickStart(sender: AnyObject) {
         //TODO set game to active, assign targets to everyone, yay!
+        returnUserData()
         
     }
     
