@@ -134,6 +134,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
     }
+    var firstAndLastName : String?
+    var id : String?
     
     func returnUserData() -> Dictionary<String, AnyObject>
     {
@@ -148,16 +150,24 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             else
             {
                 print("fetched user: \(result)")
-                let id : NSString = result.valueForKey("id") as! NSString
-                print("User id is: \(id)")
+                self.id = result.valueForKey("id") as! NSString as String
+                print("User id is: \(self.id)")
                 let firstName : NSString = result.valueForKey("first_name") as! NSString
                 let lastName : NSString = result.valueForKey("last_name") as! NSString
                 print("User first name is: \(firstName)")
-                let firstAndLastName =  (firstName as String) + (lastName as String);
-                let photoURL = "http://graph.facebook.com/"+(id as String)+"/picture"
-                self.addUser(id, name: firstAndLastName, photo: photoURL, dead: false, targid: "")
+                self.firstAndLastName =  (firstName as String) + (lastName as String);
+                let photoURL = "http://graph.facebook.com/"+(self.id)!+"/picture"
+                self.addUser(id!, name: firstAndLastName!, photo: photoURL, dead: false, targid: "")
             }
         })
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segue1"
+        {
+            let dest = segue.destinationViewController as! CreateJoinViewController
+            dest.userLogin = firstAndLastName
+            dest.userID = id
+        }
     }
     // returns pointer to linkedList
     func makeGame(gameid: String, uid: NSString) -> LinkedList<String> {
@@ -191,7 +201,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         ];
         usersRef.childByAppendingPath(uid as String).setValue(userObj)
     }
-    
+    /*
     func joinGame(uid: NSString,
         gameid: String) {
             var ref = new1 Firebase("https://vivid-torch-6580.firebaseio.com/");
@@ -200,6 +210,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 "status": 1]
             usersRef.child(uid).update(userObj)
     }
+    */
     
 }
 

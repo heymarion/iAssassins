@@ -11,7 +11,16 @@ import UIKit
 import Firebase
 
 class Admin2ViewController: UIViewController {
-    
+    var userLogin : String?
+    var userID : String?
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toWaiting"
+        {
+            let dest = segue.destinationViewController as! WaitingViewController
+            dest.userLogin = userLogin
+            dest.userID = userID
+        }
+    }
     
     @IBOutlet weak var startGameButton: UIButton!
     

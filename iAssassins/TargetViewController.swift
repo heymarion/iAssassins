@@ -13,6 +13,9 @@ import Firebase
 
 
 class TargetViewController: UIViewController, CLLocationManagerDelegate {
+    var userLogin : String?
+    var userID : String?
+    
     
     let locationManager = CLLocationManager()
     
@@ -20,17 +23,17 @@ class TargetViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var participantsLeft: UILabel!
     @IBOutlet weak var currTarget: UILabel!
     @IBOutlet weak var targetImage: UIImageView!
-    
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "a500248c-abc2-4206-9bd7-034f4fc9ed10")!, identifier: "Beacons")
     
     override func viewDidLoad() {
-        var ref = Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
+        let ref = Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
+        var usersRef = ref.childByAppendingPath("Users")
+        var gameId = usersRef.childByAppendingPath(userID).valueForKey("gameid")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         //current game id loading
         var currGame = currentGameLabel
-        var gameId =  //TODO set this to game name frmo current user's game Id
         currGame.text = "Current Game: \(gameId)"
         
         var pL = participantsLeft

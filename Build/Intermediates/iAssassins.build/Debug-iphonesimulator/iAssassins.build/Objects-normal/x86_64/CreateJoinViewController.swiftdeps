@@ -6,23 +6,27 @@ provides-nominal:
 provides-member:
 - ["C10iAssassins24CreateJoinViewController", ""]
 provides-dynamic-lookup:
-- "joinId"
-- "onCreateSubmit"
 - "createSubmit"
-- "onJoinSubmit"
 - "viewDidLoad"
 - "createId"
 - "joinSubmit"
+- "ref"
 - "didReceiveMemoryWarning"
+- "onCreateSubmit"
+- "joinId"
+- "onJoinSubmit"
 depends-top-level:
-- "UITextField"
-- !private "StringLiteralType"
-- "UIViewController"
+- "StringLiteralType"
 - "CreateJoinViewController"
+- "Firebase"
+- "UIViewController"
 - "UIButton"
-- !private "!"
+- "UITextField"
 - "AnyObject"
+- !private "!="
+- !private "!"
 depends-member:
+- ["PSs9AnyObject", "Firebase"]
 - ["PSs9AnyObject", "createId"]
 - ["PSs9AnyObject", "createSubmit"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
@@ -33,12 +37,16 @@ depends-member:
 - ["PSs9AnyObject", "onCreateSubmit"]
 - ["PSs9AnyObject", "onJoinSubmit"]
 - !private ["PSs9AnyObject", "performSegueWithIdentifier"]
+- !private ["PSs9AnyObject", "queryEqualToValue"]
+- !private ["PSs9AnyObject", "queryOrderedByChild"]
+- ["PSs9AnyObject", "ref"]
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- ["PSs11CVarArgType", "Firebase"]
 - ["PSs11CVarArgType", "createId"]
 - ["PSs11CVarArgType", "createSubmit"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
@@ -49,11 +57,15 @@ depends-member:
 - ["PSs11CVarArgType", "onCreateSubmit"]
 - ["PSs11CVarArgType", "onJoinSubmit"]
 - !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
+- !private ["PSs11CVarArgType", "queryEqualToValue"]
+- !private ["PSs11CVarArgType", "queryOrderedByChild"]
+- ["PSs11CVarArgType", "ref"]
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs10Comparable", "isEmpty"]
 - ["C10iAssassins24CreateJoinViewController", "AnyObject"]
+- ["C10iAssassins24CreateJoinViewController", "Firebase"]
 - ["C10iAssassins24CreateJoinViewController", "UIButton"]
 - ["C10iAssassins24CreateJoinViewController", "UITextField"]
 - ["C10iAssassins24CreateJoinViewController", "createId"]
@@ -66,9 +78,11 @@ depends-member:
 - ["C10iAssassins24CreateJoinViewController", "onCreateSubmit"]
 - ["C10iAssassins24CreateJoinViewController", "onJoinSubmit"]
 - !private ["C10iAssassins24CreateJoinViewController", "performSegueWithIdentifier"]
+- ["C10iAssassins24CreateJoinViewController", "ref"]
 - ["C10iAssassins24CreateJoinViewController", "viewDidLoad"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "isEmpty"]
+- ["PSs23CustomStringConvertible", "Firebase"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "createId"]
 - ["PSs23CustomStringConvertible", "createSubmit"]
@@ -80,9 +94,13 @@ depends-member:
 - ["PSs23CustomStringConvertible", "onCreateSubmit"]
 - ["PSs23CustomStringConvertible", "onJoinSubmit"]
 - !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "queryEqualToValue"]
+- !private ["PSs23CustomStringConvertible", "queryOrderedByChild"]
+- ["PSs23CustomStringConvertible", "ref"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "Firebase"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - ["PSs9Equatable", "createId"]
 - ["PSs9Equatable", "createSubmit"]
@@ -94,10 +112,20 @@ depends-member:
 - ["PSs9Equatable", "onCreateSubmit"]
 - ["PSs9Equatable", "onJoinSubmit"]
 - !private ["PSs9Equatable", "performSegueWithIdentifier"]
+- !private ["PSs9Equatable", "queryEqualToValue"]
+- !private ["PSs9Equatable", "queryOrderedByChild"]
+- ["PSs9Equatable", "ref"]
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "isEmpty"]
+- !private ["CSo6FQuery", "deinit"]
+- ["CSo6FQuery", "init"]
+- !private ["CSo6FQuery", "queryEqualToValue"]
+- !private ["CSo6FQuery", "queryOrderedByChild"]
+- ["CSo8Firebase", "init"]
+- !private ["CSo8Firebase", "queryOrderedByChild"]
+- ["PSs8Hashable", "Firebase"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - ["PSs8Hashable", "createId"]
 - ["PSs8Hashable", "createSubmit"]
@@ -109,10 +137,15 @@ depends-member:
 - ["PSs8Hashable", "onCreateSubmit"]
 - ["PSs8Hashable", "onJoinSubmit"]
 - !private ["PSs8Hashable", "performSegueWithIdentifier"]
+- !private ["PSs8Hashable", "queryEqualToValue"]
+- !private ["PSs8Hashable", "queryOrderedByChild"]
+- ["PSs8Hashable", "ref"]
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- ["SQ", "deinit"]
 - !private ["PSs14MirrorPathType", "isEmpty"]
+- ["PSo8NSCoding", "Firebase"]
 - ["PSo8NSCoding", "createId"]
 - ["PSo8NSCoding", "createSubmit"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -123,10 +156,12 @@ depends-member:
 - ["PSo8NSCoding", "onCreateSubmit"]
 - ["PSo8NSCoding", "onJoinSubmit"]
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- ["PSo8NSCoding", "ref"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "isEmpty"]
+- ["PSo26NSExtensionRequestHandling", "Firebase"]
 - ["PSo26NSExtensionRequestHandling", "createId"]
 - ["PSo26NSExtensionRequestHandling", "createSubmit"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -136,14 +171,17 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "onCreateSubmit"]
 - ["PSo26NSExtensionRequestHandling", "onJoinSubmit"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- ["PSo26NSExtensionRequestHandling", "ref"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "isEmpty"]
 - ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Firebase"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "createId"]
 - ["CSo8NSObject", "createSubmit"]
+- !private ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isEmpty"]
@@ -152,8 +190,12 @@ depends-member:
 - ["CSo8NSObject", "onCreateSubmit"]
 - ["CSo8NSObject", "onJoinSubmit"]
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- !private ["CSo8NSObject", "queryEqualToValue"]
+- !private ["CSo8NSObject", "queryOrderedByChild"]
+- ["CSo8NSObject", "ref"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "Firebase"]
 - ["PSo16NSObjectProtocol", "createId"]
 - ["PSo16NSObjectProtocol", "createSubmit"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -164,6 +206,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "onCreateSubmit"]
 - ["PSo16NSObjectProtocol", "onJoinSubmit"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "queryEqualToValue"]
+- !private ["PSo16NSObjectProtocol", "queryOrderedByChild"]
+- ["PSo16NSObjectProtocol", "ref"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
@@ -171,13 +216,16 @@ depends-member:
 - !private ["CSo8NSString", "isEmpty"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
+- !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "isEmpty"]
 - !private ["PSs10Streamable", "isEmpty"]
+- !private ["SS", "deinit"]
 - !private ["SS", "isEmpty"]
 - !private ["PSs30StringInterpolationConvertible", "isEmpty"]
 - !private ["PSs24StringLiteralConvertible", "isEmpty"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "text"]
+- ["PSo21UIAppearanceContainer", "Firebase"]
 - ["PSo21UIAppearanceContainer", "createId"]
 - ["PSo21UIAppearanceContainer", "createSubmit"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -187,9 +235,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "onCreateSubmit"]
 - ["PSo21UIAppearanceContainer", "onJoinSubmit"]
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "ref"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Firebase"]
 - ["PSo18UIContentContainer", "createId"]
 - ["PSo18UIContentContainer", "createSubmit"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -199,6 +249,7 @@ depends-member:
 - ["PSo18UIContentContainer", "onCreateSubmit"]
 - ["PSo18UIContentContainer", "onJoinSubmit"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- ["PSo18UIContentContainer", "ref"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "text"]
@@ -206,6 +257,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo10UIKeyInput", "text"]
 - ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Firebase"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "createId"]
@@ -217,8 +269,10 @@ depends-member:
 - ["CSo11UIResponder", "onCreateSubmit"]
 - ["CSo11UIResponder", "onJoinSubmit"]
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- ["CSo11UIResponder", "ref"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "Firebase"]
 - ["PSo16UIStateRestoring", "createId"]
 - ["PSo16UIStateRestoring", "createSubmit"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -228,11 +282,13 @@ depends-member:
 - ["PSo16UIStateRestoring", "onCreateSubmit"]
 - ["PSo16UIStateRestoring", "onJoinSubmit"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- ["PSo16UIStateRestoring", "ref"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
+- ["PSo18UITraitEnvironment", "Firebase"]
 - ["PSo18UITraitEnvironment", "createId"]
 - ["PSo18UITraitEnvironment", "createSubmit"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -242,11 +298,13 @@ depends-member:
 - ["PSo18UITraitEnvironment", "onCreateSubmit"]
 - ["PSo18UITraitEnvironment", "onJoinSubmit"]
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UITraitEnvironment", "ref"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Firebase"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "createId"]
@@ -258,6 +316,7 @@ depends-member:
 - ["CSo16UIViewController", "onCreateSubmit"]
 - ["CSo16UIViewController", "onJoinSubmit"]
 - !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- ["CSo16UIViewController", "ref"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "isEmpty"]
@@ -269,6 +328,7 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "isEmpty"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "isEmpty"]
@@ -285,7 +345,10 @@ depends-nominal:
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "CSo6FQuery"
+- "CSo8Firebase"
 - "PSs8Hashable"
+- "SQ"
 - !private "PSs14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -326,6 +389,7 @@ depends-nominal:
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
 - !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
 - "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
@@ -367,5 +431,17 @@ depends-external:
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/vinh/Desktop/iAssassins/iAssassins/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FConfig.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FAuthType.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FAuthData.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FMutableData.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FEventType.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/FQuery.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Headers/Firebase.h"
+- "/Users/vinh/Desktop/iAssassins/iAssassins/Firebase.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "1ecd10fae42a19e490901a406c2b93b6"
+interface-hash: "02060a25063241839b9a24e919bbbb70"

@@ -11,7 +11,16 @@ import UIKit
 import Firebase
 
 class CreateJoinViewController: UIViewController {
-    
+    var userLogin : String?
+    var userID : String?
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toAdmin"
+        {
+            let dest = segue.destinationViewController as! Admin2ViewController
+            dest.userLogin = userLogin
+            dest.userID = userID
+        }
+    }
     //@IBOutlet weak var logo: UIImageView!
     
     @IBOutlet weak var joinSubmit: UIButton!
@@ -22,10 +31,12 @@ class CreateJoinViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(userLogin)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     var ref = Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
+    
     
     
     
@@ -51,6 +62,7 @@ class CreateJoinViewController: UIViewController {
         if let name = joinId.text {
             if (!name.isEmpty) { //change to check if name is taken
                 //TODO join game (add current user to game)
+                
                 performSegueWithIdentifier("toWaiting", sender: nil)
             }
             else {

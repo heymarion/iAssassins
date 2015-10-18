@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A321A9401BD3905B0065A8DA /* toCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321A93F1BD3905B0065A8DA /* toCopy.swift */; settings = {ASSET_TAGS = (); }; };
 		A321A9421BD390D50065A8DA /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A321A9411BD390D50065A8DA /* Firebase.framework */; settings = {ASSET_TAGS = (); }; };
 		A33F48F61BD36956008AA66F /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F48F41BD36956008AA66F /* AdminViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A33F48F71BD36956008AA66F /* WaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F48F51BD36956008AA66F /* WaitingViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -43,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A321A93F1BD3905B0065A8DA /* toCopy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toCopy.swift; sourceTree = "<group>"; };
 		A321A9411BD390D50065A8DA /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		A33F48F41BD36956008AA66F /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		A33F48F51BD36956008AA66F /* WaitingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				A33F48F81BD36ADF008AA66F /* Admin2ViewController.swift */,
 				A33F48F51BD36956008AA66F /* WaitingViewController.swift */,
 				B61284E21BD23870003DBC67 /* ViewController.swift */,
-				A321A93F1BD3905B0065A8DA /* toCopy.swift */,
 				B61284E41BD23870003DBC67 /* Main.storyboard */,
 				B61285141BD26ADC003DBC67 /* CreateJoinViewController.swift */,
 				B61285161BD27C66003DBC67 /* TargetViewController.swift */,
@@ -293,7 +290,6 @@
 				B61284E31BD23870003DBC67 /* ViewController.swift in Sources */,
 				A33F48F71BD36956008AA66F /* WaitingViewController.swift in Sources */,
 				B61284E11BD23870003DBC67 /* AppDelegate.swift in Sources */,
-				A321A9401BD3905B0065A8DA /* toCopy.swift in Sources */,
 				A33F48F61BD36956008AA66F /* AdminViewController.swift in Sources */,
 				B61285171BD27C66003DBC67 /* TargetViewController.swift in Sources */,
 			);

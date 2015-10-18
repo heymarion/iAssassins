@@ -11,6 +11,16 @@ import UIKit
 
 
 class WaitingViewController: UIViewController {
+    var userLogin : String?
+    var userID : String?
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toStartGame"
+        {
+            let dest = segue.destinationViewController as! TargetViewController
+            dest.userLogin = userLogin
+            dest.userID = userID
+        }
+    }
     //@IBOutlet weak var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
