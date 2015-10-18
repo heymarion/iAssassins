@@ -28,7 +28,7 @@ class TargetViewController: UIViewController, CLLocationManagerDelegate {
         
         //current game id loading
         var currGame = currentGameLabel
-        var gameId = 5 //TODO set this to game name frmo current user's game Id
+        var gameId =  //TODO set this to game name frmo current user's game Id
         currGame.text = "Current Game: \(gameId)"
         
         var pL = participantsLeft

@@ -7,7 +7,67 @@
 //
 
 import UIKit
+import Firebase
+class LLNode<T> {
+    var key: T?;
+    var next: LLNode?;
+}
 
+public class LinkedList<T: Equatable> {
+    
+    //create a new LLNode instance
+    private var head: LLNode<T> = LLNode<T>();
+    
+    //append a new item to a linked list
+    func addLink(key: T) {
+        //establish the head node
+        if (head.key == nil) {
+            head.key = key;
+            head.next = head;
+            return;
+        }
+        
+        var current: LLNode? = head;
+        
+        while (current != nil) {
+            if (current?.next == head) {
+                var childToUse: LLNode = LLNode<T>();
+                childToUse.key = key;
+                childToUse.next = head;
+                current!.next = childToUse;
+                break;
+            }
+            
+            current = current?.next;
+        }
+    }
+    
+    func removeLinkAtIndex(index: Int) {
+        var current: LLNode<T>? = head;
+        var trailer: LLNode<T>?;
+        var listIndex: Int = 0;
+        
+        //determine if the removal is at the head
+        if (index == 0) {
+            current = current?.next;
+            head = current!;
+            return;
+        }
+        
+        while (current != nil) {
+            if (listIndex == index) {
+                
+                trailer!.next = current?.next;
+                current = nil; break;
+            }
+            
+            //update the assignments
+            trailer = current;
+            current = current?.next;
+            listIndex++;
+        }
+    }
+}
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
@@ -75,7 +135,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         print("User Logged Out")
     }
     
-    func returnUserData()
+    func returnUserData() -> Dictionary<String, AnyObject>
     {
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
@@ -94,12 +154,52 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 let lastName : NSString = result.valueForKey("last_name") as! NSString
                 print("User first name is: \(firstName)")
                 let firstAndLastName =  (firstName as String) + (lastName as String);
-                
+                let photoURL = "http://graph.facebook.com/"+(id as String)+"/picture"
+                self.addUser(id, name: firstAndLastName, photo: photoURL, dead: false, targid: "")
             }
         })
     }
+    // returns pointer to linkedList
+    func makeGame(gameid: String, uid: NSString) -> LinkedList<String> {
+        var ref =  Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
+        var gameRef = ref.childByAppendingPath("Games");
+        var usersRef = ref.childByAppendingPath("Users")
+        var gameObj = ["gameid": gameid,
+            "active": false,
+        ];
+        var userObj = ["admin":1]
+        usersRef.childByAppendingPath(uid as String).updateChildValues(userObj)
+        gameRef.childByAppendingPath(gameid as String).setValue(gameObj)
+        var list = LinkedList() as LinkedList<String>;
+        usersRef.queryOrderedByChild("gameid").queryEqualToValue(gameid)
+            .observeEventType(.ChildAdded, withBlock: { snapshot in
+                
+                list.addLink(snapshot.value);
+            })
+        return list
+    }
     
-    func
+    func addUser(uid: NSString,name: NSString, photo: String, dead: Bool, targid: String) -> Bool {
+            var ref = Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
+            var usersRef = ref.childByAppendingPath("Users");
+            var userObj = ["uid": uid,
+                "name": name,
+                "photo": photo,
+                "dead": false,
+                "targid": targid,
+                "admin":false
+        ];
+        usersRef.childByAppendingPath(uid as String).setValue(userObj)
+    }
+    
+    func joinGame(uid: NSString,
+        gameid: String) {
+            var ref = new1 Firebase("https://vivid-torch-6580.firebaseio.com/");
+            usersRef = ref.childByAppendingPath("Users");
+            var userObj = ["gameid": gameid,
+                "status": 1]
+            usersRef.child(uid).update(userObj)
+    }
     
 }
 

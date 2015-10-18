@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class Admin2ViewController: UIViewController {
     
@@ -16,8 +17,10 @@ class Admin2ViewController: UIViewController {
     
     
     @IBAction func onClickStart(sender: AnyObject) {
+        var ref = Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
+        
         //TODO set game to active, assign targets to everyone, yay!
-        returnUserData()
+        
         
     }
     

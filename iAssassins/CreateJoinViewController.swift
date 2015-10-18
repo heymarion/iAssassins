@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class CreateJoinViewController: UIViewController {
     
@@ -22,15 +23,20 @@ class CreateJoinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
     }
+    
+    var ref = Firebase(url: "https://vivid-torch-6580.firebaseio.com/");
+    
+    
     
     @IBAction func onCreateSubmit(sender: AnyObject) {
         if let name = createId.text {
             if (!name.isEmpty) { //change to check if name isn't taken yet
                 //TODO create game & set current user to admin
-                performSegueWithIdentifier("toAdmin", sender: nil)
+                if(ref.queryOrderedByChild("gameid").queryEqualToValue(name) != nil)
+                {
+                    performSegueWithIdentifier("toAdmin", sender: nil)
+                }
             }
             else {
                 //id already taken try again
