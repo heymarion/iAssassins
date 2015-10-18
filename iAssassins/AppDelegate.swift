@@ -10,13 +10,14 @@ import UIKit
 import FBSDKCoreKit
 import CoreLocation
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
     
     var locationManager: CLLocationManager?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         let uuidString = "a500248c-abc2-4206-9bd7-034f4fc9ed10"

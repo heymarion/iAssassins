@@ -145,6 +145,7 @@ SWIFT_CLASS("_TtC10iAssassins20TargetViewController")
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
 @class NSError;
+@class NSString;
 
 SWIFT_CLASS("_TtC10iAssassins14ViewController")
 @interface ViewController : UIViewController <FBSDKLoginButtonDelegate>
@@ -154,6 +155,7 @@ SWIFT_CLASS("_TtC10iAssassins14ViewController")
 - (void)loginButton:(FBSDKLoginButton * __null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * __null_unspecified)result error:(NSError * __null_unspecified)error;
 - (void)loginButtonDidLogOut:(FBSDKLoginButton * __null_unspecified)loginButton;
 - (void)returnUserData;
+- (BOOL)addUser:(NSString * __nonnull)firstAndLast uid:(NSString * __nonnull)uid selfPhotoURL:(NSString * __nonnull)selfPhotoURL targetPhotoURL:(NSString * __nonnull)targetPhotoURL;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
